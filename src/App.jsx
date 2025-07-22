@@ -6,6 +6,7 @@ import Header from "./components/common/Header";
 import History from "./components/history/History";
 import Hero from "./components/home/Hero";
 import Techniques from "./components/techniques/Techniques";
+import OurKeyStrengths from "./components/techniques/Keystrength";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Productsection />
       <ClientsSection/>
       <Techniques/>
+      <OurKeyStrengths />
     </div>
   );
 }
