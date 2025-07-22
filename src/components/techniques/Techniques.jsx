@@ -2,7 +2,7 @@ import manfacturing from "../../assets/Manufacturing-industry.png";
 
 const Techniques = () => {
   return (
-    <section className="py-20 px-5 lg:px-32 xl:px-40 bg-white">
+    <section className="py-20 px-5 lg:px-32 xl:px-40 bg-white ">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
         
         <div className="max-w-[467px] space-y-5 lg:text-left">
