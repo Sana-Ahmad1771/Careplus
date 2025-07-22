@@ -15,31 +15,41 @@ const Header = () => {
           <span>
             <FiPhone />
           </span>
-          <span>(239) 555-0108</span>
+          <span>
+            <a href="">(239) 555-0108</a>
+          </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
             <MdOutlineEmail />
           </span>
-          <span>info@safecareind.xyz</span>
+          <span>
+            <a href="">info@safecareind.xyz</a>
+          </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
         </div>
         {/*  */}
         <div className="hidden lg:flex items-center space-x-4">
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
-            <RiFacebookFill />
+            <a href="">
+              <RiFacebookFill />
+            </a>
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
-            <FaXTwitter />
+            <a href="">
+              <FaXTwitter />
+            </a>
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
-            <LuInstagram />
+            <a href="">
+              <LuInstagram />
+            </a>
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
-            <RxLinkedinLogo />
+            <a href=""><RxLinkedinLogo /></a>
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
         </div>
