@@ -28,8 +28,8 @@ const strengths = [
 export default function OurKeyStrengths() {
   return (
     <section
-      className="bg-white bg-no-repeat bg-cover bg-left-top w-full pt-24 pb-24 px-4"
-      style={{ backgroundImage: `url(${Backgroundmolecule})` }}
+      className=" bg-no-repeat bg-cover bg-left-top w-full pt-24 pb-24 px-4 "
+      style={{ backgroundImage: `url(${Backgroundmolecule})`, }}
     >
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-[#1E3D69] mb-12">
