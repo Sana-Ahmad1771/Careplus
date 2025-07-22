@@ -1,7 +1,7 @@
 import About from "./components/about/About";
 import Mission from "./components/about/Mission";
 import ClientsSection from "./components/cards/ClientsSection";
-import Productsection from "./components/cards/Productsection";
+import Productsection from "./components/cards/ProductSection";
 import Header from "./components/common/header";
 import History from "./components/history/History";
 import Hero from "./components/home/Hero";
@@ -14,7 +14,7 @@ function App() {
       <About />
       <Mission/>
       <History/>
-      <Productsection/>
+      <Productsection />
       <ClientsSection/>
     </div>
   );
