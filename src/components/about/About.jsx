@@ -2,7 +2,8 @@ import NurseImg1 from "../../assets/Nurse-1.png";
 
 const About = () => {
   return (
-    <section className="relative z-[30] px-5 sm:px-10 xl:px-60  -mt-32">
+    <section className="relative z-[30] px-5 sm:px-10 xl:px-60 mt-10 lg:-mt-4 xl:-mt-10">
+
       <div className="mx-auto bg-white py-[66px] px-5 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-[100px] ">
         {/* Nurse Image */}
         <div className="max-w-sm w-full">
