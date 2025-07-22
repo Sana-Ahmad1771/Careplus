@@ -16,15 +16,22 @@ const ourclients = [
 
 const ClientsSection = () => {
   return (
-    <div className="py-20 px-5 lg:px-32 xl:px-40 bg-white">
-      <h2 className="text-[44px] font-semibold text-[#1E3D69] text-center">
-        {" "}
+    <div className="py-20 px-5 lg:px-32 xl:px-40">
+      <h2 className="text-[32px] lg:text-[44px] font-semibold text-[#1E3D69] text-center mb-12">
         Our Clients
       </h2>
-      <div className="flex flex-wrap items-center justify-center p-4">
+
+      <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
         {ourclients.map((client, index) => (
-          <div key={index}>
-            <img src={client.Image} alt="client1" />
+          <div
+            key={index}
+            className="w-[280px] h-[120px] bg-white flex items-center justify-center shadow-md rounded-lg"
+          >
+            <img
+              src={client.Image}
+              alt={client.name}
+              className="max-h-[60px] object-contain"
+            />
           </div>
         ))}
       </div>
