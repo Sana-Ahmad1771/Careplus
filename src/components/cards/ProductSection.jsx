@@ -10,7 +10,7 @@ const products = [
   { title: "CSSD Wrappers", image: product4 },
 ];
 
-const ProductSection = () => {
+const Productsection = () => {
   return (
     <div className="py-20 px-5 lg:px-32 xl:px-40 h-full">
       <div className="text-center">
@@ -41,4 +41,4 @@ const ProductSection = () => {
   );
 };
 
-export default ProductSection;
+export default Productsection;
