@@ -39,7 +39,7 @@ export default function OurKeyStrengths() {
           {strengths.map((item, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-xl p-6 border border-gray-100 flex-1 min-w-[280px] max-w-[370px] mx-auto"
+              className="bg-white shadow-lg rounded-xl p-6 border border-gray-100 flex-1 min-w-[280px] max-w-[370px] mx-auto hover:shadow-blue-300 transition-shadow duration-300"
             >
               <div className="flex items-center gap-2 mb-3">
                 <div className="bg-blue-100 p-2 rounded-[4px]">{item.icon}</div>

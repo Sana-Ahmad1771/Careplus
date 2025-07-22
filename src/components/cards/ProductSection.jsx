@@ -32,7 +32,7 @@ const Productsection = () => {
                 alt={item.title}
                 className="w-full h-48 object-cover rounded"
               />
-              <div className="absolute bottom-0 left-0 w-full bg-blue-900 bg-opacity-70 text-white text-center py-2 hover:bg-blue-800 transition duration-300">
+              <div className="absolute bottom-0 left-0 w-full bg-[#A9D6EBE5] bg-opacity-70 text-[#1E3D69] text-center py-2 hover:bg-[#7eb9d4e5] transition duration-300">
                 {item.title}
               </div>
             </div>
