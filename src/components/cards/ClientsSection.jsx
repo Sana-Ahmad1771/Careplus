@@ -25,7 +25,8 @@ const ClientsSection = () => {
         {ourclients.map((client, index) => (
           <div
             key={index}
-            className="w-[280px] h-[120px] bg-white flex items-center justify-center shadow-md rounded-lg"
+            className="w-[280px] h-[120px] bg-white flex items-center justify-center 
+            shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-105"
           >
             <img
               src={client.Image}

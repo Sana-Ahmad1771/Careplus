@@ -18,19 +18,21 @@ const Productsection = () => {
           Our Product Category
         </h2>
         <p className="text-[20px] font-normal mt-2 text-gray-600 max-w-4xl mx-auto">
-          Our solutions encompass the entire gamut of healthcare delivery, ranging from: Turnkey solutions, Surgical, Clinical, Life Sciences, Laboratory Medicine etc.
+          Our solutions encompass the entire gamut of healthcare delivery,
+          ranging from: Turnkey solutions, Surgical, Clinical, Life Sciences,
+          Laboratory Medicine etc.
         </p>
       </div>
       <div className="flex flex-wrap justify-center mt-8">
         {products.map((item, index) => (
           <div key={index} className="w-full sm:w-1/2 md:w-1/4 p-4">
-            <div className="relative group">
+            <div className="relative group shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-110 duration-300 ">
               <img
                 src={item.image}
                 alt={item.title}
                 className="w-full h-48 object-cover rounded"
               />
-              <div className="absolute bottom-0 left-0 w-full bg-blue-900 bg-opacity-70 text-white text-center py-2">
+              <div className="absolute bottom-0 left-0 w-full bg-blue-900 bg-opacity-70 text-white text-center py-2 hover:bg-blue-800 transition duration-300">
                 {item.title}
               </div>
             </div>

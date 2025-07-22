@@ -5,6 +5,7 @@ import Productsection from "./components/cards/ProductSection";
 import Header from "./components/common/Header";
 import History from "./components/history/History";
 import Hero from "./components/home/Hero";
+import Techniques from "./components/techniques/Techniques";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <History/>
       <Productsection />
       <ClientsSection/>
+      <Techniques/>
     </div>
   );
 }
