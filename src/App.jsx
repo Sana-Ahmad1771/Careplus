@@ -2,7 +2,7 @@ import About from "./components/about/About";
 import Mission from "./components/about/Mission";
 import ClientsSection from "./components/cards/ClientsSection";
 import Productsection from "./components/cards/ProductSection";
-import Header from "./components/common/header";
+import Header from "./components/common/Header";
 import History from "./components/history/History";
 import Hero from "./components/home/Hero";
 
