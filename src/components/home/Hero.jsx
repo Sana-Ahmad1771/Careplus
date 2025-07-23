@@ -3,10 +3,10 @@ import BackgroundImage from "../../assets/Rectangle3173.png";
 const Hero = () => {
   return (
     <section
-      className="bg-cover bg-center min-h-[100vh] pb-5 mb-5 pt-65  px-5 lg:px-32 xl:px-40 relative"
+      className="bg-cover bg-center min-h-[100vh] pb-5 mb-5 pt-30 px-5 lg:px-32 xl:px-40 relative"
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
-      <div className="flex lg:justify-start justify-center items-center h-full">
+      <div className="flex justify-start items-center h-full">
         <div
           className="relative lg:px-[54px] px-4 pt-16 pb-11 border-l-[6.905px] border-[#1E3D69] backdrop-blur-[8.06px] 
           bg-[linear-gradient(160deg,rgba(169,214,235,0.5)_-8.93%,rgba(203,233,247,0.5)_86.48%)] max-w-[650px] w-full"
