@@ -5,7 +5,7 @@ import cert3 from "../../assets/cert-iso.webp";
 const QualityCertification = () => {
   return (
     <div className="bg-white py-20 px-5 lg:px-32 xl:px-40 text-center mt-10">
-      <h2 className="text-[32px] lg:text-[44px] font-normal text-center mb-4">
+      <h2 className="text-[32px] text-[#1E3D69] lg:text-[44px] font-semibold text-center mb-4">
         Quality & Certifications
       </h2>
       <p className="text-[20px] font-normal">

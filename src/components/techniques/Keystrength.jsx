@@ -3,21 +3,21 @@ import Backgroundmolecule from "../../assets/Molecular-bg.png";
 
 const strengths = [
   {
-    icon: <LayoutGrid className="w-6 h-6 text-[#1E3D69]" />,
+    icon: <LayoutGrid className="w-6 h-6" />,
     badge: "ISO 7, ISO 8",
     title: "Clean Rooms",
     description:
       "Spread over a total area of 1500 sq meters. Safecare manufacturing takes places in the ISO 7, ISO 8 classified clean room environment that has a low level of pollutants such as dust, airborne microbes, aerosol particles and chemical vapours.",
   },
   {
-    icon: <Cpu className="w-6 h-6 text-[#1E3D69]" />,
+    icon: <Cpu className="w-6 h-6" />,
     badge: "High Tech Automated",
     title: "Storage System",
     description:
       "Safecare holds the unique accomplishment of having the worlds finest automated storage system spread over a vast area of 30000 sq ft. The system ensures 100 percent efficiency in storage without involving any manual interventions",
   },
   {
-    icon: <Pill className="w-6 h-6 text-[#1E3D69]" />,
+    icon: <Pill className="w-6 h-6" />,
     badge: "Made with Supreme",
     title: "Pharma Grade",
     description:
@@ -36,7 +36,7 @@ export default function OurKeyStrengths() {
           Our Key Strengths
         </h2>
 
-        {/* ✅ Responsive & Centered Grid */}
+        {/* Responsive & Centered Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {strengths.map((item, index) => (
             <div
