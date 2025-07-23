@@ -28,18 +28,20 @@ const strengths = [
 export default function OurKeyStrengths() {
   return (
     <section
-      className=" bg-no-repeat bg-cover bg-left-top w-full py-20 px-5 lg:px-32 xl:px-40 "
-      style={{ backgroundImage: `url(${Backgroundmolecule})`, }}
+      className="bg-no-repeat bg-cover bg-left-top w-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-40 py-20"
+      style={{ backgroundImage: `url(${Backgroundmolecule})` }}
     >
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-[#1E3D69] mb-12">
+      <div className="text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#1E3D69] mb-12">
           Our Key Strengths
         </h2>
-        <div className="flex flex-wrap justify-center items-stretch gap-8">
+
+        {/* ✅ Responsive & Centered Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {strengths.map((item, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-xl p-6 border border-gray-100 flex-1 min-w-[280px] max-w-[370px] mx-auto hover:shadow-blue-300 transition-shadow duration-300"
+              className="bg-white shadow-lg rounded-xl p-6 border border-gray-100 w-full max-w-[388px] max-h-[342px] hover:shadow-blue-300 transition-shadow duration-300"
             >
               <div className="flex items-center gap-2 mb-3">
                 <div className="bg-blue-100 p-2 rounded-[4px]">{item.icon}</div>

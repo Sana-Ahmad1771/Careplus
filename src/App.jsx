@@ -7,6 +7,10 @@ import History from "./components/history/History";
 import Hero from "./components/home/Hero";
 import Techniques from "./components/techniques/Techniques";
 import OurKeyStrengths from "./components/techniques/Keystrength";
+import NewsAndEvents from "./components/news&events/NewsAndEvents";
+import QualityCertification from "./components/qualityandcertifications/QualityCertification";
+import JoiningSafeCare from "./components/joiningcareplus/joining";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
       <ClientsSection/>
       <Techniques/>
       <OurKeyStrengths />
+      <NewsAndEvents />
+      <QualityCertification/>
+      <JoiningSafeCare/>
+      <Footer/>
     </div>
   );
 }

@@ -21,17 +21,17 @@ const ClientsSection = () => {
         Our Clients
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-4 gap-2">
         {ourclients.map((client, index) => (
           <div
             key={index}
-            className="w-[280px] h-[120px] bg-white flex items-center justify-center 
-            shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-105"
+            className="w-full h-[170px] bg-white flex items-center justify-center
+             shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-105 px-2"
           >
             <img
               src={client.Image}
               alt={client.name}
-              className="max-h-[60px] object-contain"
+              className="max-h-[160px]  object-contain"
             />
           </div>
         ))}
