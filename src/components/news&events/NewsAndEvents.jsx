@@ -6,7 +6,7 @@ import { MoveRight } from "lucide-react";
 const NewsAndEvents = () => {
   return (
     <section
-      className="py-20 px-5 lg:px-32 xl:px-40 bg-white"
+      className="py-20 px-5 lg:px-32 xl:px-40 bg-white overflow-hidden"
       data-aos="fade-up"
     >
       <h2

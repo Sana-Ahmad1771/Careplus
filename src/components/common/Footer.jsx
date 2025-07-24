@@ -9,7 +9,7 @@ import logo from "../../assets/Mask-group-logo.png";
 const Footer = () => {
   return (
     <section
-      className="w-full bg-white border-t border-gray-200"
+      className="w-full bg-white border-t border-gray-200 overflow-hidden"
     >
       {/* Main Content */}
       <div className="px-5 lg:px-32 xl:px-40 py-16 flex flex-col lg:flex-row justify-between flex-wrap gap-12">
@@ -87,7 +87,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div
         className="px-5 lg:px-32 xl:px-40 border-t border-gray-200 py-6 bg-[#F5F5F5] flex flex-col lg:flex-row justify-between items-center text-center text-[16px] font-normal gap-2"
-        data-aos="zoom-in"
+        data-aos="fade-in"
         data-aos-delay="500"
       >
         <p>

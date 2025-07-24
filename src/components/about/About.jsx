@@ -2,7 +2,7 @@ import NurseImg1 from "../../assets/Nurse-1.png";
 
 const About = () => {
   return (
-    <section className="relative z-[30] sm:px-10 mt-10 lg:-mt-4 xl:-mt-10 px-5 lg:px-35 xl:px-50">
+    <section className="relative z-[30] sm:px-10 mt-10 lg:-mt-4 xl:-mt-10 px-5 lg:px-35 xl:px-50 overflow-hidden">
       <div className="mx-auto bg-white py-[66px] px-5 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-[100px]">
         {/* Nurse Image */}
         <div

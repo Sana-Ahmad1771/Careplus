@@ -17,6 +17,9 @@
         font-family: var(--font-poppins);
         color: var(--color-secondary);
         background-color: var();
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
     h2, h3, h4, h5, h6 {
         font-family: var(--font-roboto);

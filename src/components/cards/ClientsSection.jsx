@@ -16,7 +16,7 @@ const ourclients = [
 
 const ClientsSection = () => {
   return (
-    <div className="pb-10 px-5 lg:px-32 xl:px-40">
+    <div className="pb-10 px-5 lg:px-32 xl:px-40 overflow-hidden">
       <h2
         className="text-[32px] lg:text-[44px] font-semibold text-[#1E3D69] text-center mb-12"
         data-aos="fade-up"

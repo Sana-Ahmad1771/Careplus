@@ -2,7 +2,7 @@
 
 const JoiningSafeCare = () => {
   return (
-    <div className="py-10 px-5 lg:px-32 xl:px-40 text-center flex flex-col lg:flex-row items-center justify-between">
+    <div className="py-10 px-5 lg:px-32 xl:px-40 text-center flex flex-col lg:flex-row items-center justify-between overflow-hidden">
       <p className="text-[20px] font-medium text-[#1E3D69]">
         Join our newsletter to <br />
         keep up to date with us!

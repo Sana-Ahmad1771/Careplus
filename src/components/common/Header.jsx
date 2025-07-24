@@ -8,7 +8,7 @@ import { RxLinkedinLogo } from "react-icons/rx";
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-50 w-full bg-[#F5F5F5] shadow-md">
+    <div className="sticky top-0 z-50 w-full bg-[#F5F5F5] shadow-md overflow-hidden">
       {/* Top Bar */}
       <div className="bg-[#1E3D69] hidden sm:flex justify-center lg:justify-between items-center h-12 md:px-40 text-[16px] font-normal">
         <div className="flex items-center text-white space-x-4">

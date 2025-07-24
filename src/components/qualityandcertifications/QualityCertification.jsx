@@ -5,7 +5,7 @@ import cert3 from "../../assets/cert-3.png";
 const QualityCertification = () => {
   return (
     <div
-      className="bg-white py-20 px-5 lg:px-32 xl:px-40 text-center mt-10"
+      className="bg-white py-20 px-5 lg:px-32 xl:px-40 text-center mt-10 overflow-hidden"
       data-aos="fade-up"
     >
       <h2

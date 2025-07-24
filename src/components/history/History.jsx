@@ -2,7 +2,7 @@ import history1 from "../../assets/History-1-img.png";
 
 const History = () => {
   return (
-    <section className="bg-white py-20 px-5 lg:px-32 xl:px-40">
+    <section className="bg-white py-20 px-5 lg:px-32 xl:px-40 overflow-hidden">
       <div className="flex flex-col lg:flex-row items-center gap-12">
         {/* Image Section */}
         <div

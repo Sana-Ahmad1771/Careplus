@@ -3,7 +3,7 @@ import Nursebg from "../../assets/Nurse-bg.png";
 
 const Mission = () => {
   return (
-    <section className="z-[10] relative sm:px-10 -mt-16 mx-auto px-5 lg:px-32 xl:px-40">
+    <section className="z-[10] relative sm:px-10 -mt-16 mx-auto px-5 lg:px-32 xl:px-40 overflow-hidden">
       <div
         className="bg-[#ECECEC] mx-auto px-3 bg-no-repeat bg-right pt-17"
         style={{ backgroundImage: `url(${Nursebg})` }}

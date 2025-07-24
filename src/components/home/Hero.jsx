@@ -3,7 +3,7 @@ import BackgroundImage from "../../assets/Rectangle3173.png";
 const Hero = () => {
   return (
     <section
-      className="bg-cover bg-center min-h-[100vh] pb-5 mb-5 pt-30 md:pt-40 lg:pt-70 px-5 lg:px-42 xl:px-56 relative"
+      className="bg-cover bg-center min-h-[100vh] pb-5 mb-5 pt-30 md:pt-40 lg:pt-70 px-5 lg:px-42 xl:px-56 relative overflow-hidden"
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       <div className="flex justify-start items-center h-full">
