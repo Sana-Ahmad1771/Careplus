@@ -17,7 +17,10 @@ const ourclients = [
 const ClientsSection = () => {
   return (
     <div className="pb-10 px-5 lg:px-32 xl:px-40">
-      <h2 className="text-[32px] lg:text-[44px] font-semibold text-[#1E3D69] text-center mb-12">
+      <h2
+        className="text-[32px] lg:text-[44px] font-semibold text-[#1E3D69] text-center mb-12"
+        data-aos="fade-up"
+      >
         Our Clients
       </h2>
 
@@ -27,11 +30,14 @@ const ClientsSection = () => {
             key={index}
             className="w-full h-[170px] bg-white flex items-center justify-center
              shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-105 px-2"
+            data-aos="zoom-in"
+            data-aos-delay={`${index * 100}`}
+            data-aos-duration="800"
           >
             <img
               src={client.Image}
               alt={client.name}
-              className="max-h-[160px]  object-contain"
+              className="max-h-[160px] object-contain"
             />
           </div>
         ))}

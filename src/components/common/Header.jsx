@@ -8,48 +8,48 @@ import { RxLinkedinLogo } from "react-icons/rx";
 const Header = () => {
   return (
     <div>
-      <div className="bg-[#1E3D69] hidden  sm:flex justify-center lg:justify-between items-center h-12 md:px-40  text-white text-[16px] font-normal">
+      <div className="bg-[#1E3D69] hidden  sm:flex justify-center lg:justify-between items-center h-12 md:px-40  text-[16px] font-normal">
         {/*  */}
-        <div className="flex items-center  space-x-4 ">
+        <div className="flex items-center text-white space-x-4 ">
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
             <FiPhone />
           </span>
           <span>
-            <a href="">(239) 555-0108</a>
+            (239) 555-0108
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
             <MdOutlineEmail />
           </span>
           <span>
-            <a href="">info@safecareind.xyz</a>
+            info@safecareind.xyz
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
         </div>
         {/*  */}
-        <div className="hidden lg:flex items-center space-x-4">
+        <div className="hidden  lg:flex items-center space-x-4">
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
             <a href="">
-              <RiFacebookFill />
+              <RiFacebookFill color="white"/>
             </a>
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
             <a href="">
-              <FaXTwitter />
+              <FaXTwitter color="white"/>
             </a>
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
             <a href="">
-              <LuInstagram />
+              <LuInstagram  color="white"/>
             </a>
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span>
-            <a href=""><RxLinkedinLogo /></a>
+            <a href=""><RxLinkedinLogo color="white" /></a>
           </span>
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
         </div>

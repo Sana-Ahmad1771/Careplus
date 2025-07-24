@@ -42,6 +42,9 @@ export default function OurKeyStrengths() {
             <div
               key={index}
               className="bg-white shadow-lg rounded-xl p-6 border border-gray-100 w-full max-w-[388px] max-h-[342px] hover:shadow-blue-300 transition-shadow duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 200} 
+              data-aos-duration="1000"
             >
               <div className="flex items-center gap-2 mb-3">
                 <div className="bg-blue-100 p-2 rounded-[4px]">{item.icon}</div>

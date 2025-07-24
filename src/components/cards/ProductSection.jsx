@@ -12,8 +12,14 @@ const products = [
 
 const Productsection = () => {
   return (
-    <div className="py-20 px-5 lg:px-32 xl:px-40">
-      <div className="text-center">
+    <div className="py-20 px-5 lg:px-32 xl:px-40" id="product-section">
+      {/* Heading Section */}
+      <div
+        className="text-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="800"
+      >
         <h2 className="text-[32px] md:text-[44px] font-semibold text-[#1E3D69]">
           Our Product Category
         </h2>
@@ -24,9 +30,16 @@ const Productsection = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 mt-12">
+      {/* Product Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12">
         {products.map((item, index) => (
-          <div key={index} className="flex justify-center">
+          <div
+            key={index}
+            className="flex justify-center"
+            data-aos="zoom-in-up"
+            data-aos-delay={`${index * 200}`}
+            data-aos-duration="800"
+          >
             <div className="w-[308px] relative shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-110 duration-300">
               <img
                 src={item.image}
