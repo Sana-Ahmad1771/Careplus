@@ -49,7 +49,7 @@ export default function OurKeyStrengths() {
             >
               <div className="flex items-center gap-2 mb-3">
                 <div className="bg-blue-100 p-2 rounded-[4px]">{item.icon}</div>
-                <span className="text-[13px] font-medium bg-[#A9D6EB] text-[#1E3D69] px-2 py-1 rounded-3xl">
+                <span className="text-[16px] font-medium bg-[#A9D6EB] text-[#1E3D69] px-2 py-1 rounded-3xl">
                   {item.badge}
                 </span>
               </div>
