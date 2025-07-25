@@ -40,7 +40,7 @@ const Productsection = () => {
             data-aos-delay={`${index * 200}`}
             data-aos-duration="800"
           >
-            <div className="w-[308px] relative shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-110 duration-300">
+            <div className="w-[308px] relative shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-105 duration-300">
               <img
                 src={item.image}
                 alt={item.title}
