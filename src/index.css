@@ -1,36 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
-:root {
-    --font-poppins: "Inter", "sans-serif";
-    --font-roboto: "Roboto", "sans-serif";
 
-    --color-primary: #1E3D69;
-    --color-secondary: #000E21;
-    --color-anchor: #323232;
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --color-primary: #1e3d69;
+  --color-secondary: #000e21;
+  --color-anchor: #323232;
 
-    --breakpoint-sm: 480px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 1024px;
-    --breakpoint-xl: 1280px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
 }
+
 @layer base {
-    body {
-        font-family: var(--font-poppins);
-        color: var(--color-secondary);
-        background-color: var();
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-    h2, h3, h4, h5, h6 {
-        font-family: var(--font-roboto);
-        color: var(--color-primary);
-    }
-    p{
-        font-family: var(--font-poppins);
-        color: var(--color-secondary);
-    }
-    a{
-        color: var(--color-anchor);
-        text-decoration: none;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 }

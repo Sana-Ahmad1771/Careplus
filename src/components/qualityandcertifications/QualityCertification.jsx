@@ -5,26 +5,26 @@ import cert3 from "../../assets/cert-3.png";
 const QualityCertification = () => {
   return (
     <div
-      className="bg-white py-20 px-5 lg:px-32 xl:px-40 text-center mt-10 overflow-hidden"
+      className="bg-white py-30 px-5 lg:px-32 xl:px-40 text-center mt-10 overflow-hidden leading-normal font-normal"
       data-aos="fade-up"
     >
-      <h2
-        className="text-[32px] text-[#1E3D69] lg:text-[44px] font-semibold text-center mb-4"
+      <h1
+        className="text-4xl font-roboto lg:text-[44px] text-[#1E3D69] mb-[9px]"
         data-aos="fade-down"
         data-aos-delay="100"
       >
         Quality & Certifications
-      </h2>
+      </h1>
 
       <p
-        className="text-[20px] font-normal"
+        className="text-[18px] lg:text-[20px] font-poppins"
         data-aos="fade-down"
         data-aos-delay="200"
       >
         We do care, for your better tomorrow.
       </p>
 
-      <div className="flex flex-col items-center gap-6 mt-10 lg:flex-row lg:justify-center lg:gap-12">
+      <div className="flex flex-col items-center gap-6 mt-[70px] lg:flex-row lg:justify-center lg:gap-12">
         <img
           src={cert1}
           alt="CE Certification"

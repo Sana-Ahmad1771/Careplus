@@ -12,7 +12,7 @@ const products = [
 
 const Productsection = () => {
   return (
-    <div className="py-20 px-5 lg:px-32 xl:px-40" id="product-section">
+    <div className="py-30 px-5 lg:px-32 xl:px-40 leading-normal">
       {/* Heading Section */}
       <div
         className="text-center"
@@ -20,10 +20,10 @@ const Productsection = () => {
         data-aos-delay="100"
         data-aos-duration="800"
       >
-        <h2 className="text-[32px] md:text-[44px] font-semibold text-[#1E3D69]">
+        <h1 className="text-4xl font-roboto lg:text-[44px] font-medium text-[#1E3D69]">
           Our Product Category
-        </h2>
-        <p className="text-[18px] md:text-[20px] font-normal mt-2 text-gray-600 max-w-4xl mx-auto">
+        </h1>
+        <p className="text-[18px] lg:text-[20px] font-poppins font-normal mt-6 max-w-4xl mx-auto">
           Our solutions encompass the entire gamut of healthcare delivery,
           ranging from: Turnkey solutions, Surgical, Clinical, Life Sciences,
           Laboratory Medicine etc.
@@ -46,7 +46,7 @@ const Productsection = () => {
                 alt={item.title}
                 className="w-full object-cover rounded"
               />
-              <div className="absolute bottom-0 left-0 w-full bg-[#A9D6EBE5] text-[#1E3D69] text-center py-2 hover:bg-[#7eb9d4e5] transition duration-300">
+              <div className="absolute bottom-0 left-0 w-full font-poppins bg-[#A9D6EBE5] text-[#1E3D69] text-[18px] font-medium text-center py-2 hover:bg-[#7eb9d4e5] transition duration-300">
                 {item.title}
               </div>
             </div>

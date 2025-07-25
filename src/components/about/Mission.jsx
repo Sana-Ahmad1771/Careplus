@@ -11,27 +11,28 @@ const Mission = () => {
         <div className="flex flex-col lg:flex-row items-center min-h-[623px] pt-3">
           {/* Text Section */}
           <div
-            className="max-w-[650px] mt-20 lg:mx-24 p-5 xl:p-10 border-l-[5.399px] border-[#1E3D69] bg-white/70 backdrop-blur-[7.56px] relative mb-6 lg:mb-0"
+            className="max-w-[650px] mt-20 lg:mx-24 p-5 xl:p-10 border-l-[5.399px] font-normal leading-normal border-[#1E3D69] bg-white/70 backdrop-blur-[7.56px] relative mb-6 lg:mb-0"
             data-aos="fade-right"
             data-aos-delay="200"
             data-aos-duration="1000"
           >
             <span
-              className="bg-[#A9D6EB] py-3 px-6 absolute -top-12 left-0 lg:-left-10 text-3xl font-normal text-[#1E3D69]"
+              className="bg-[#A9D6EB] py-3 px-6 font-roboto absolute -top-12 left-0 lg:-left-10 text-3xl text-[#1E3D69]"
               data-aos="zoom-in"
               data-aos-delay="400"
             >
               Our Mission
             </span>
             <p
-              className="text-[#1E3D69] text-[18px]"
+              className="font-poppins text-[21px]"
               data-aos="fade-up"
               data-aos-delay="600"
               data-aos-duration="800"
             >
-              Advancing Life – That’s what we at Safecare aim to do. With our
-              products & our focus every day, it’s our goal to push boundaries
-              for the benefit of those who rely on our care the most.
+              <span className="font-medium">Advancing Life</span> – That’s what
+              we at Safecare aim to do. With our products & our focus every day,
+              it’s our goal to push boundaries for the benefit of those who rely
+              on our care the most.
             </p>
           </div>
 

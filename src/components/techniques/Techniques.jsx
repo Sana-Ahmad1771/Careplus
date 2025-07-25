@@ -2,7 +2,7 @@ import manfacturing from "../../assets/Manufacturing-industry.png";
 
 const Techniques = () => {
   return (
-    <section className="py-20 px-5 lg:px-32 xl:px-40 bg-white overflow-hidden">
+    <section className="py-30 px-5 lg:px-32 xl:px-40 bg-white overflow-hidden">
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
 
         <div
@@ -11,15 +11,15 @@ const Techniques = () => {
           data-aos-delay="100"
           data-aos-duration="1000"
         >
-          <h2 className="text-[#1E3D69] text-[32px] lg:text-[44px] font-bold">
+          <h1 className="text-4xl font-roboto lg:text-[44px] font-medium text-[#1E3D69]">
             Manufacturing Techniques
-          </h2>
-          <p className="text-[18px] lg:text-[20px] font-normal">
+          </h1>
+          <p className="text-[18px] lg:text-[20px] font-poppins font-normal leading-normal">
             Our manufacturing includes a wide variety of processes including
-            <strong>
+            <span className="font-medium">
               {" "}
               Injection moulding, Blow Moulding, Thermoforming etc.{" "}
-            </strong>
+            </span>
             and all those that are required for a World Class Medical
             Manufacturing Facility.
           </p>

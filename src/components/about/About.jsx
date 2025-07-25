@@ -3,7 +3,7 @@ import NurseImg1 from "../../assets/Nurse-1.png";
 const About = () => {
   return (
     <section className="relative z-[30] sm:px-10 mt-10 lg:-mt-4 xl:-mt-10 px-5 lg:px-35 xl:px-50 overflow-hidden">
-      <div className="mx-auto bg-white py-[66px] px-5 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-[100px]">
+      <div className="mx-auto bg-white py-[66px] px-5 flex flex-col lg:flex-row items-center justify-center font-normal leading-normal font-poppins gap-6 lg:gap-[100px]">
         {/* Nurse Image */}
         <div
           className="max-w-sm w-full"
@@ -25,21 +25,21 @@ const About = () => {
           data-aos-delay="300"
           data-aos-duration="1000"
         >
-          <h2
-            className="text-4xl lg:text-[44px] font-semibold text-[#1E3D69]"
+          <h1
+            className="text-4xl lg:text-[44px] font-roboto text-[#1E3D69]"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="800"
           >
             Who we are?
-          </h2>
+          </h1>
           <p
-            className="text-[#1E3D69] text-[18px] lg:text-[20px] font-medium"
+            className="text-[#1E3D69] text-[18px] lg:text-[20px]"
             data-aos="fade-up"
             data-aos-delay="600"
             data-aos-duration="800"
           >
-            <strong>Safecare Medical Industries</strong> was conceived and
+            <span className="font-medium">Safecare Medical Industries</span> was conceived and
             established in 2016 to bring a new dimension to the medical
             industry across the Middle East.
           </p>

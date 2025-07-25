@@ -8,9 +8,9 @@ import { RxLinkedinLogo } from "react-icons/rx";
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-50 w-full bg-[#F5F5F5] shadow-md overflow-hidden">
+    <div className="sticky top-0 z-50 w-full bg-[#F5F5F5] font-inter font-normal text-[16px] shadow-md overflow-hidden">
       {/* Top Bar */}
-      <div className="bg-[#1E3D69] hidden sm:flex justify-center lg:justify-between items-center h-12 md:px-40 text-[16px] font-normal">
+      <div className="bg-[#1E3D69] hidden sm:flex justify-center lg:justify-between items-center h-12 md:px-40">
         <div className="flex items-center text-white space-x-4">
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
           <span><FiPhone /></span>
@@ -40,7 +40,7 @@ const Header = () => {
           <img src={Logo} alt="logo" />
         </div>
         <div className="hidden lg:block">
-          <ul className="flex justify-center items-center font-poppins space-x-10 list-none font-normal text-[16px]">
+          <ul className="flex justify-center items-center space-x-10 list-none ">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#products">Products</a></li>

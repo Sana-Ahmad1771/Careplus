@@ -9,7 +9,7 @@ import logo from "../../assets/Mask-group-logo.png";
 const Footer = () => {
   return (
     <section
-      className="w-full bg-white border-t border-gray-200 overflow-hidden"
+      className="w-full bg-white font-inter border-t border-gray-200 overflow-hidden text-[#333] text-[16px] leading-normal"
     >
       {/* Main Content */}
       <div className="px-5 lg:px-32 xl:px-40 py-16 flex flex-col lg:flex-row justify-between flex-wrap gap-12">
@@ -20,15 +20,15 @@ const Footer = () => {
           data-aos-delay="100"
         >
           <img src={logo} alt="Logo" className="mb-5 w-32" />
-          <p className="text-[16px] font-normal mb-6">
+          <p className=" mb-6">
             Welcome to a place of refinement and beauty. This is Furniture, a WP
             gem we made for all furniture stores & brands.
           </p>
           <div className="space-y-2">
-            <div className="flex items-center gap-2 text-[16px]">
+            <div className="flex items-center gap-2 ">
               <FiPhone /> (239) 555-0108
             </div>
-            <div className="flex items-center gap-2 text-[16px]">
+            <div className="flex items-center gap-2">
               <MdOutlineEmail /> info@caremedicaltrading.xyz
             </div>
           </div>
@@ -36,8 +36,8 @@ const Footer = () => {
 
         {/* Services */}
         <div data-aos="zoom-in" data-aos-delay="200">
-          <h4 className="text-2xl font-semibold mb-4">Services</h4>
-          <ul className="space-y-2 text-[16px]">
+          <h4 className="text-2xl font-plus-jakarta-sans mb-4">Services</h4>
+          <ul className="space-y-2">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Shop</a></li>
@@ -48,8 +48,8 @@ const Footer = () => {
 
         {/* Resources */}
         <div data-aos="zoom-in" data-aos-delay="300">
-          <h4 className="text-2xl font-semibold mb-4">Resources</h4>
-          <ul className="space-y-2 text-[16px]">
+          <h4 className="text-2xl font-plus-jakarta-sans mb-4">Resources</h4>
+          <ul className="space-y-2">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Product</a></li>
@@ -63,8 +63,8 @@ const Footer = () => {
           data-aos="zoom-in"
           data-aos-delay="400"
         >
-          <h4 className="text-2xl font-semibold mb-4">Location</h4>
-          <p className="text-[16px] mb-6">
+          <h4 className="text-2xl font-plus-jakarta-sans mb-4">Location</h4>
+          <p className="mb-6">
             PPGH+X76 - Kizad - Khalifa Industrial Zone - Abu Dhabi
           </p>
           <div className="flex gap-3">
@@ -86,9 +86,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div
-        className="px-5 lg:px-32 xl:px-40 border-t border-gray-200 py-6 bg-[#F5F5F5] flex flex-col lg:flex-row justify-between items-center text-center text-[16px] font-normal gap-2"
-        data-aos="fade-in"
-        data-aos-delay="500"
+        className="px-5 lg:px-32 xl:px-40 border-t border-gray-200 py-6 bg-[#F5F5F5] flex flex-col lg:flex-row justify-between items-center text-center  gap-2"
       >
         <p>
           © CareMedicalTrading. All rights reserved {new Date().getFullYear()}

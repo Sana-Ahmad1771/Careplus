@@ -16,19 +16,19 @@ const ourclients = [
 
 const ClientsSection = () => {
   return (
-    <div className="pb-10 px-5 lg:px-32 xl:px-40 overflow-hidden">
-      <h2
-        className="text-[32px] lg:text-[44px] font-semibold text-[#1E3D69] text-center mb-12"
+    <div className="py-30 px-5 lg:px-32 xl:px-40 overflow-hidden">
+      <h1
+        className="text-4xl font-roboto lg:text-[44px] font-medium text-[#1E3D69] text-center mb-9"
         data-aos="fade-up"
       >
         Our Clients
-      </h2>
+      </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-4 gap-2">
         {ourclients.map((client, index) => (
           <div
             key={index}
-            className="w-full h-[170px] bg-white flex items-center justify-center
+            className="w-full h-[160px] bg-white flex items-center justify-center
              shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-105 px-2"
             data-aos="zoom-in"
             data-aos-delay={`${index * 100}`}
