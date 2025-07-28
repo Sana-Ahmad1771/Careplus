@@ -9,33 +9,48 @@ import { RxLinkedinLogo } from "react-icons/rx";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // This state variable controls the visibility of the dropdown menu at first it sets the initial value false . 
+  const [copied, setCopied] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);//  "☰" or "✕" This function toggles the state of the menu between open and closed.
   const closeMenu = () => setIsMenuOpen(false);//this is helper function to force close the menu after clicking on "x" button
-
+  
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 3000);
+  };
   return (
     <div className="sticky top-0 z-50 w-full bg-[#F5F5F5] font-inter font-normal text-[16px] shadow-md">
       {/* Top Bar */}
       <div className="bg-[#1E3D69] hidden sm:flex justify-center lg:justify-between items-center h-12 md:px-40">
         <div className="flex items-center text-white space-x-4">
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
+          
           <span><FiPhone /></span>
-          <span><a href="#contactno">(239) 555-0108</a></span>
+          <span onClick={() => copyToClipboard("(239) 555-0108")} className="cursor-pointer hover:underline underline-offset-4">(239) 555-0108</span>
+          
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
+          
           <span><MdOutlineEmail /></span>
-          <span><a href="#emailadress">info@safecareind.xyz</a></span>
+          <span onClick={() => copyToClipboard("info@safecareind.xyz")} className="cursor-pointer hover:underline underline-offset-4">info@safecareind.xyz</span>
+         
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
         </div>
 
         <div className="hidden lg:flex items-center space-x-4">
+          
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
-          <a href="#facebook"><RiFacebookFill color="white" /></a>
+          <a href="#facebook" className="hover:scale-125"><RiFacebookFill color="white" /></a>
+
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
-          <a href="#twitter"><FaXTwitter color="white" /></a>
+          <a href="#twitter" className="hover:scale-125"><FaXTwitter color="white" /></a>
+
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
-          <a href="#instagram"><LuInstagram color="white" /></a>
+          <a href="#instagram" className="hover:scale-125"><LuInstagram color="white" /></a>
+
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
-          <a href="#linkedin"><RxLinkedinLogo color="white" /></a>
+          <a href="#linkedin" className="hover:scale-125"><RxLinkedinLogo color="white" /></a>
+
           <div className="w-[1.5px] h-12 bg-[rgba(255,255,255,0.20)]"></div>
         </div>
       </div>
@@ -49,12 +64,12 @@ const Header = () => {
         {/* Desktop Nav */}
         <div className="hidden lg:block">
           <ul className="flex justify-center items-center space-x-10 list-none">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#career">Careers</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" className="hover:text-[#1E3D69]">Home</a></li>
+            <li><a href="#about" className="hover:text-[#1E3D69]">About Us</a></li>
+            <li><a href="#products" className="hover:text-[#1E3D69]">Products</a></li>
+            <li><a href="#gallery" className="hover:text-[#1E3D69]">Gallery</a></li>
+            <li><a href="#career" className="hover:text-[#1E3D69]">Careers</a></li>
+            <li><a href="#contact" className="hover:text-[#1E3D69]">Contact</a></li>
           </ul>
         </div>
 
@@ -91,6 +106,11 @@ const Header = () => {
           )}
         </div>
       </div>
+        {copied && (
+        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-[#1E3D69] text-white px-4 py-2 rounded shadow-md text-sm z-50">
+          Copied to clipboard!
+        </div>
+      )}
     </div>
   );
 };

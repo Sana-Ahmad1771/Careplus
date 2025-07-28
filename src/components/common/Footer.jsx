@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
@@ -7,6 +8,14 @@ import { FaXTwitter } from "react-icons/fa6";
 import logo from "../../assets/Mask-group-logo.png";
 
 const Footer = () => {
+  const [copied, setCopied] = useState(false);
+
+  const onClickCopy = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 3000);
+  };
+
   return (
     <section className="w-full bg-white font-inter border-t border-gray-200 overflow-hidden text-[#333] text-[16px] leading-normal">
       {/* Main Content */}
@@ -24,11 +33,12 @@ const Footer = () => {
           </p>
           <div className="space-y-2">
             <div className="flex items-center gap-2 ">
-              <FiPhone /> <a href="contactno">(239) 555-0108</a>
+              <FiPhone /> 
+              <span onClick={()=> onClickCopy("(239) 555-0108")} className="cursor-pointer hover:underline underline-offset-4">(239) 555-0108</span>
             </div>
             <div className="flex items-center gap-2">
               <MdOutlineEmail />
-              <a href="emailadress">info@caremedicaltrading.xyz</a>
+              <span onClick={() => onClickCopy("info@safecareind.xyz")} className="cursor-pointer hover:underline underline-offset-4" href="">info@safecareind.xyz</span>
             </div>
           </div>
         </div>
@@ -99,6 +109,7 @@ const Footer = () => {
             )}
           </div>
         </div>
+        
       </div>
 
       {/* Bottom Bar */}
@@ -108,7 +119,15 @@ const Footer = () => {
         </p>
         <p className="text-wrap">Privacy Policy | Terms & Conditions</p>
       </div>
+
+      {copied && (
+        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-[#1E3D69] text-white px-4 py-2 rounded shadow-md text-sm z-50">
+          Copied to clipboard!
+        </div>
+      )}
+      
     </section>
+
   );
 };
 
