@@ -34,7 +34,7 @@ const About = () => {
             Who we are?
           </h1>
           <p
-            className="text-[#1E3D69] text-[18px] lg:text-[20px]"
+            className="text-[18px] lg:text-[20px]"
             data-aos="fade-up"
             data-aos-delay="600"
             data-aos-duration="800"
@@ -44,7 +44,7 @@ const About = () => {
             industry across the Middle East.
           </p>
           <button
-            className="bg-[#1E3D69] text-white px-6 py-2 rounded hover:bg-[#163154] transition"
+            className="bg-[#1E3D69] text-white px-6 py-2 cursor-pointer rounded hover:bg-[#163154] transition"
             data-aos="zoom-in"
             data-aos-delay="600"
             data-aos-duration="600"

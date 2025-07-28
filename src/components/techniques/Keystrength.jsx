@@ -3,21 +3,21 @@ import Backgroundmolecule from "../../assets/Molecular-bg.png";
 
 const strengths = [
   {
-    icon: <LayoutGrid className="w-6 h-6" />,
+    icon: <LayoutGrid size={30} />,
     badge: "ISO 7, ISO 8",
     title: "Clean Rooms",
     description:
       "Spread over a total area of 1500 sq meters. Safecare manufacturing takes places in the ISO 7, ISO 8 classified clean room environment that has a low level of pollutants such as dust, airborne microbes, aerosol particles and chemical vapours.",
   },
   {
-    icon: <Cpu className="w-6 h-6" />,
+    icon: <Cpu size={30} />,
     badge: "High Tech Automated",
     title: "Storage System",
     description:
       "Safecare holds the unique accomplishment of having the worlds finest automated storage system spread over a vast area of 30000 sq ft. The system ensures 100 percent efficiency in storage without involving any manual interventions",
   },
   {
-    icon: <Pill className="w-6 h-6" />,
+    icon: <Pill size={30} />,
     badge: "Made with Supreme",
     title: "Pharma Grade",
     description:
@@ -37,28 +37,21 @@ export default function OurKeyStrengths() {
         </h1>
 
         {/* Responsive & Centered Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {strengths.map((item, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-xl font-poppins p-6  border border-gray-100 w-full max-w-[388px] 
+              className="bg-white shadow-lg rounded-xl justify-items-center font-poppins p-6  border border-gray-100 w-full max-w-[388px] 
                hover:shadow-blue-300 transition-shadow duration-300 leading-normal"
               data-aos="fade-up"
-              data-aos-delay={index * 200} 
+              data-aos-delay={index * 200}
               data-aos-duration="1000"
             >
-              <div className="flex items-center gap-2 mb-3">
-                <div className="bg-blue-100 p-2 rounded-[4px]">{item.icon}</div>
-                <span className="text-[16px] font-medium bg-[#A9D6EB] text-[#1E3D69] px-2 py-1 rounded-3xl">
-                  {item.badge}
-                </span>
+              <div className="bg-blue-100 w-fit p-2 just-ite mb-2 rounded-[4px]">
+                {item.icon}
               </div>
-              <h3 className="text-[28px] font-medium mb-2">
-                {item.title}
-              </h3>
-              <p className="text-[16px] text-[#323232] ">
-                {item.description}
-              </p>
+              <h3 className="text-[28px] font-medium mb-2">{item.title}</h3>
+              <p className="text-[16px] text-[#323232] ">{item.description}</p>
             </div>
           ))}
         </div>

@@ -8,9 +8,7 @@ import logo from "../../assets/Mask-group-logo.png";
 
 const Footer = () => {
   return (
-    <section
-      className="w-full bg-white font-inter border-t border-gray-200 overflow-hidden text-[#333] text-[16px] leading-normal"
-    >
+    <section className="w-full bg-white font-inter border-t border-gray-200 overflow-hidden text-[#333] text-[16px] leading-normal">
       {/* Main Content */}
       <div className="px-5 lg:px-32 xl:px-40 py-16 flex flex-col lg:flex-row justify-between flex-wrap gap-12">
         {/* Brand Info */}
@@ -26,10 +24,11 @@ const Footer = () => {
           </p>
           <div className="space-y-2">
             <div className="flex items-center gap-2 ">
-              <FiPhone /> (239) 555-0108
+              <FiPhone /> <a href="contactno">(239) 555-0108</a>
             </div>
             <div className="flex items-center gap-2">
-              <MdOutlineEmail /> info@caremedicaltrading.xyz
+              <MdOutlineEmail />
+              <a href="emailadress">info@caremedicaltrading.xyz</a>
             </div>
           </div>
         </div>
@@ -38,11 +37,21 @@ const Footer = () => {
         <div data-aos="zoom-in" data-aos-delay="200">
           <h4 className="text-2xl font-plus-jakarta-sans mb-4">Services</h4>
           <ul className="space-y-2">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
           </ul>
         </div>
 
@@ -50,10 +59,18 @@ const Footer = () => {
         <div data-aos="zoom-in" data-aos-delay="300">
           <h4 className="text-2xl font-plus-jakarta-sans mb-4">Resources</h4>
           <ul className="space-y-2">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Product</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
           </ul>
         </div>
 
@@ -85,9 +102,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div
-        className="px-5 lg:px-32 xl:px-40 border-t border-gray-200 py-6 bg-[#F5F5F5] flex flex-col lg:flex-row justify-between items-center text-center  gap-2"
-      >
+      <div className="px-5 lg:px-32 xl:px-40 border-t border-gray-200 py-6 bg-[#F5F5F5] flex flex-col lg:flex-row justify-between items-center text-center  gap-2">
         <p>
           © CareMedicalTrading. All rights reserved {new Date().getFullYear()}
         </p>

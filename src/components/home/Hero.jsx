@@ -1,4 +1,4 @@
-import BackgroundImage from "../../assets/Rectangle3173.jpeg";
+import BackgroundImage from "../../assets/Rectangle3173.jpg";
 
 const Hero = () => {
   return (
