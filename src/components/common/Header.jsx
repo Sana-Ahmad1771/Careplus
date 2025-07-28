@@ -64,11 +64,12 @@ const Header = () => {
             onClick={toggleMenu}
             className="text-2xl text-[#1E3D69] "
           >
-            {isMenuOpen ? "✕" : "☰"}// condition ? if true then "✕" else if false "☰"
+            {isMenuOpen ? "✕" : "☰"}
           </button>
 
           {/* Small Dropdown Menu */}
-          {isMenuOpen && ( // This checks if the menu is open
+           
+          {isMenuOpen && (
             <div className="absolute place-items-center right-0 mt-2 w-44 bg-white shadow-lg rounded-md py-2 z-50">
               <a href="#home" onClick={closeMenu}
                 className="block px-4 py-2 ">
@@ -95,3 +96,6 @@ const Header = () => {
 };
 
 export default Header;
+
+// {isMenuOpen && ()... This checks if the menu is open
+// condition ? if true "x" : else false "☰" This is a ternary operator that checks the state of the menu and displays either "x" or "☰" based on whether the menu is open or closed.
