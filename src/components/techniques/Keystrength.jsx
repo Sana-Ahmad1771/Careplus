@@ -47,9 +47,10 @@ export default function OurKeyStrengths() {
               data-aos-delay={index * 200}
               data-aos-duration="1000"
             >
-              <div className="bg-blue-100 w-fit p-2 just-ite mb-2 rounded-[4px]">
+              <div className=" w-fit p-2 just-ite  rounded-[4px]">
                 {item.icon}
               </div>
+              <div className="bg-[#A9D6EB] px-2 py-1 text-[18px] mb-2 ">{item.badge}</div>
               <h3 className="text-[28px] font-medium mb-2">{item.title}</h3>
               <p className="text-[16px] text-[#323232] ">{item.description}</p>
             </div>
