@@ -40,9 +40,6 @@ const Hero = () => {
             </h1>
             <p
               className="text-lg lg:text-[23px] font-poppins"
-              data-aos="fade-up"
-              data-aos-delay="700"
-              data-aos-duration="800"
             >
               <span className="font-medium">Safecare Medical Industries</span> was conceived and established in the
               year of 2016.
