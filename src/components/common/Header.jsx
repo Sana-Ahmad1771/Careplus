@@ -7,25 +7,25 @@ import { FaXTwitter } from "react-icons/fa6";
 import { LuInstagram } from "react-icons/lu";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { AlignRight } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // This state variable controls the visibility of the dropdown menu at first it sets the initial value false .
   const [copied, setCopied] = useState(false);
 
-  {/* to hidde the home page from scrolling in menu hamburger*/}
-  useEffect(() => {
-  if (isMenuOpen) {
-    document.body.classList.add("overflow-hidden");
-  } else {
-    document.body.classList.remove("overflow-hidden");
+  {
+    /* to hidde the home page from scrolling in menu hamburger*/
   }
-  return () => {
-    document.body.classList.remove("overflow-hidden");
-  };
-
-
-}, [isMenuOpen]);
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isMenuOpen]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen); //  "☰" or "✕" This function toggles the state of the menu between open and closed.
   const closeMenu = () => setIsMenuOpen(false); //this is helper function to force close the menu after clicking on "x" button
@@ -137,13 +137,12 @@ const Header = () => {
         {/* Mobile View*/}
         <div className="lg:hidden relative">
           <button onClick={toggleMenu}>
-            {isMenuOpen ? "" : <RxHamburgerMenu  size={30} color={"#1E3D69"}/>}
+            {isMenuOpen ? "" : <AlignRight size={30} color={"#1E3D69"} />}
           </button>
 
           {isMenuOpen && (
             <div className="fixed inset-0 bg-white z-50 p-6">
-
-              <div className="flex justify-between items-center mb-6">
+              <div className="flex justify-between items-center mb-2">
                 {/* logo */}
                 <img src={Logo} alt="logo" className="w-32" />
 
@@ -151,43 +150,25 @@ const Header = () => {
                   <IoCloseSharp size={30} color={"#1E3D69"} />
                 </button>
               </div>
-
+                 <hr  className="mb-6 text-[#1E3D69]"/>
               {/* Menu Items */}
               <div className="flex flex-col text-[20px] space-y-6 px-2">
-                <a
-                  href="#home"
-                  onClick={closeMenu}
-                >
+                <a href="#home" onClick={closeMenu}>
                   Home
                 </a>
-                <a
-                  href="#about"
-                  onClick={closeMenu}
-                >
+                <a href="#about" onClick={closeMenu}>
                   About
                 </a>
-                <a
-                  href="#products"
-                  onClick={closeMenu}
-                >
+                <a href="#products" onClick={closeMenu}>
                   Products
                 </a>
-                <a
-                  href="#gallery"
-                  onClick={closeMenu}
-                >
+                <a href="#gallery" onClick={closeMenu}>
                   Gallery
                 </a>
-                <a
-                  href="#career"
-                  onClick={closeMenu}
-                >
+                <a href="#career" onClick={closeMenu}>
                   Careers
                 </a>
-                <a
-                  href="#contact"
-                  onClick={closeMenu}
-                >
+                <a href="#contact" onClick={closeMenu}>
                   Contact
                 </a>
               </div>
