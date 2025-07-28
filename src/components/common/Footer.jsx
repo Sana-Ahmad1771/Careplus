@@ -20,7 +20,6 @@ const Footer = () => {
     <section className="w-full bg-white font-inter border-t border-gray-200 overflow-hidden text-[#333] text-[16px] leading-normal">
       {/* Main Content */}
       <div className="px-5 lg:px-32 xl:px-40 py-16 flex flex-col lg:flex-row justify-between flex-wrap gap-12">
-        {/* Brand Info */}
         <div
           className="flex-1 min-w-[190px]"
           data-aos="zoom-in"
@@ -38,7 +37,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-2">
               <MdOutlineEmail />
-              <span onClick={() => onClickCopy("info@safecareind.xyz")} className="cursor-pointer hover:underline underline-offset-4" href="">info@safecareind.xyz</span>
+              <span onClick={() => onClickCopy("info@safecareind.xyz")} className="cursor-pointer hover:underline underline-offset-4" >info@safecareind.xyz</span>
             </div>
           </div>
         </div>

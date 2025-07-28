@@ -10,7 +10,7 @@ const JoiningSafeCare = () => {
       </p>
 
       <div className="flex flex-col sm:flex-row items-center gap-4">
-        <input to
+        <input
           type="email"
           placeholder="Enter your email"
           className="border border-[rgba(50,50,50,0.20)] bg-[rgba(255,255,255,0.90)] text-[#bebebe] text-[16px] px-4 py-2 rounded-md w-72  "
