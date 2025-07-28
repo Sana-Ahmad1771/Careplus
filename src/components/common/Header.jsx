@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../../assets/Mask-group-logo.png";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
@@ -12,6 +12,20 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // This state variable controls the visibility of the dropdown menu at first it sets the initial value false .
   const [copied, setCopied] = useState(false);
+
+  {/* to hidde the home page from scrolling in menu hamburger*/}
+  useEffect(() => {
+  if (isMenuOpen) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
+  return () => {
+    document.body.classList.remove("overflow-hidden");
+  };
+
+
+}, [isMenuOpen]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen); //  "☰" or "✕" This function toggles the state of the menu between open and closed.
   const closeMenu = () => setIsMenuOpen(false); //this is helper function to force close the menu after clicking on "x" button
