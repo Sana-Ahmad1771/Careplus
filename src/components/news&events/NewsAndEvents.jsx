@@ -47,7 +47,7 @@ const NewsAndEvents = () => {
               </p>
               <motion.button
                 whileHover="hover"
-                className="mt-1 font-medium text-[16px] self-start flex items-center gap-2"
+                className="mt-1 cursor-pointer font-medium text-[16px] self-start flex items-center gap-2"
               >
                 Read More
                 <motion.span
@@ -92,7 +92,7 @@ const NewsAndEvents = () => {
                 </p>
                 <motion.button
                   whileHover="hover"
-                  className="mt-1 font-medium text-[16px] self-start flex items-center gap-2"
+                  className="mt-1 cursor-pointer font-medium text-[16px] self-start flex items-center gap-2"
                 >
                   Read More
                   <motion.span
