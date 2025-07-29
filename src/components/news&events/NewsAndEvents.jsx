@@ -45,10 +45,21 @@ const NewsAndEvents = () => {
                 classified clean room environment that has a low level of
                 pollutants such as dust and chemical vapours.
               </p>
-              <button className="mt-3 font-medium text-[16px] hover:underline transition duration-300 self-start flex items-center gap-2">
+              <motion.button
+                whileHover="hover"
+                className="mt-1 font-medium text-[16px] self-start flex items-center gap-2"
+              >
                 Read More
-                <MoveRight size={20} />
-              </button>
+                <motion.span
+                  variants={{
+                    hover: { x: 5 },
+                    initial: { x: 0 },
+                  }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                >
+                  <MoveRight size={23} />
+                </motion.span>
+              </motion.button>
             </div>
           </div>
         </motion.div>
@@ -72,15 +83,28 @@ const NewsAndEvents = () => {
                 />
               </div>
               <div className="flex flex-col justify-center gap-4">
-                <h3 className="text-[28px]">Improve Workflow With Agile Yoga</h3>
+                <h3 className="text-[28px]">
+                  Improve Workflow With Agile Yoga
+                </h3>
                 <p className="text-[18px] lg:text-[20px]">
                   Safecare manufacturing takes place in the ISO 7, ISO 8
                   classified clean room environment.
                 </p>
-                <button className="mt-1 font-medium text-[16px] hover:underline transition duration-300 self-start flex items-center gap-2">
+                <motion.button
+                  whileHover="hover"
+                  className="mt-1 font-medium text-[16px] self-start flex items-center gap-2"
+                >
                   Read More
-                  <MoveRight size={20} />
-                </button>
+                  <motion.span
+                    variants={{
+                      hover: { x: 5 },
+                      initial: { x: 0 },
+                    }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  >
+                    <MoveRight size={23} />
+                  </motion.span>
+                </motion.button>
               </div>
             </motion.div>
           ))}
