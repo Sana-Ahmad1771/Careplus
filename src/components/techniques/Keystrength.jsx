@@ -29,11 +29,10 @@ const strengths = [
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: (index) => ({
-    opacity: 1,
-    y: 0,
+    opacity: 1, y: 0,
     transition: {
       delay: index * 0.2,
-      duration: 0.8,
+      duration: 0.5,
       ease: "easeOut",
     },
   }),
@@ -51,12 +50,12 @@ export default function OurKeyStrengths() {
         </h1>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 2xl:gap-20 ">
             {strengths.map((item, index) => (
               <motion.div
                 key={index}
                 className="bg-white hover:bg-[#f0f9ff] shadow-lg rounded-xl font-poppins p-6 border border-gray-100 w-full max-w-[388px] 
-                transition-all duration-300 hover:shadow-blue-300"
+                transition-all duration-300 hover:shadow-blue-300 place-items-center"
                 variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"

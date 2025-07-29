@@ -36,17 +36,10 @@ const History = () => {
           >
             Our History
           </motion.span>
-          <motion.h1
-            className="text-4xl font-roboto lg:text-[42px] text-[#1E3D69]"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
+          <motion.h1 className="text-4xl font-roboto lg:text-[42px] text-[#1E3D69]">
             Safecare Medical Industries
           </motion.h1>
-          <motion.p
-            className="font-poppins text-[18px] lg:text-[20px]"
+          <motion.p className="font-poppins text-[18px] lg:text-[20px]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
