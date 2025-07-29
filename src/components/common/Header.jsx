@@ -84,7 +84,7 @@ const Header = () => {
         </div>
 
         {/* Mobile View */}
-        
+
         <div className="lg:hidden relative">
           <button onClick={toggleMenu}>
             {isMenuOpen ? "" : <AlignRight size={30} color={"#1E3D69"} />}
@@ -97,10 +97,10 @@ const Header = () => {
                 animate={{ x: 0 }}
                 exit={{ x: "100%" }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="fixed inset-0 bg-white z-50 p-6"
+                className="fixed inset-0 bg-white z-50 px-6 sm:pt-10 "
               >
-                <div className="flex justify-between items-center mb-2">
-                  <img src={Logo} alt="logo" className="w-32" />
+                <div className="flex justify-between items-center mb-1">
+                  <img src={Logo} alt="logo" />
                   <button onClick={closeMenu}>
                     <IoCloseSharp size={30} color={"#1E3D69"} />
                   </button>
