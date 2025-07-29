@@ -1,4 +1,4 @@
-
+import { motion} from "motion/react";
 
 const JoiningSafeCare = () => {
   return (
@@ -15,9 +15,16 @@ const JoiningSafeCare = () => {
           placeholder="Enter your email"
           className="border border-[rgba(50,50,50,0.20)] bg-[rgba(255,255,255,0.90)] text-[#bebebe] text-[16px] px-4 py-2 rounded-md w-72  "
         />
-        <button className="bg-[#1FBAFC] cursor-pointer text-white font-inter font-medium px-6 py-2 rounded-md hover:bg-[#1E3D69] transition duration-300">
+        <motion.button className="bg-[#1FBAFC] cursor-pointer text-white font-inter font-medium px-6 py-2 rounded-md "
+            whileHover={{
+              scale: 1.1,
+              backgroundColor: "#1E3D69",
+              transition: { duration: 0.3 },
+            }}
+            viewport={{ once: true }}
+        >
           Submit
-        </button>
+        </motion.button>
       </div>
     </div>
   );
