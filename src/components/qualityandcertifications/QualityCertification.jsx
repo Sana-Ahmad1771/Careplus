@@ -1,71 +1,93 @@
+import { motion } from "framer-motion";
 import cert1 from "../../assets/cert-1.png";
 import cert2 from "../../assets/cert-2.png";
 import cert3 from "../../assets/cert-3.png";
 
 const QualityCertification = () => {
   return (
-    <div
+    <motion.div
       className="bg-white py-30 px-5 lg:px-32 xl:px-40 text-center mt-10 overflow-hidden leading-normal font-normal"
-      data-aos="fade-up"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
     >
-      <h1
+      <motion.h1
         className="text-4xl font-roboto lg:text-[44px] text-[#1E3D69] mb-[9px]"
-        data-aos="fade-down"
-        data-aos-delay="100"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        viewport={{ once: true }}
       >
         Quality & Certifications
-      </h1>
+      </motion.h1>
 
-      <p
+      <motion.p
         className="text-[18px] lg:text-[20px] font-poppins"
-        data-aos="fade-down"
-        data-aos-delay="200"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
+        viewport={{ once: true }}
       >
         We do care, for your better tomorrow.
-      </p>
+      </motion.p>
 
       <div className="flex flex-col items-center gap-6 mt-[70px] lg:flex-row lg:justify-center lg:gap-12">
-        <img
+        <motion.img
           src={cert1}
           alt="CE Certification"
           className="w-[120px] lg:w-[160px]"
-          data-aos="zoom-in"
-          data-aos-delay="300"
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+          viewport={{ once: true }}
         />
 
-        <div
+        <motion.div
           className="w-12 h-[1.5px] lg:h-[100px] lg:w-[2px]"
           style={{
             background:
               "linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 50%, rgba(0, 0, 0, 0.00) 100%)",
           }}
-        ></div>
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.3 }}
+          viewport={{ once: true }}
+        ></motion.div>
 
-        <img
+        <motion.img
           src={cert2}
           alt="GMP Certification"
           className="w-[120px] lg:w-[160px]"
-          data-aos="zoom-in"
-          data-aos-delay="300"
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.8, duration: 0.5 }}
+          viewport={{ once: true }}
         />
 
-        <div
+        <motion.div
           className="w-12 h-[1.5px] lg:h-[100px] lg:w-[2px]"
           style={{
             background:
               "linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 50%, rgba(0, 0, 0, 0.00) 100%)",
           }}
-        ></div>
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.9, duration: 0.3 }}
+          viewport={{ once: true }}
+        ></motion.div>
 
-        <img
+        <motion.img
           src={cert3}
           alt="ISO Certification"
           className="w-[120px] lg:w-[160px]"
-          data-aos="zoom-in"
-          data-aos-delay="300"
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1.0, duration: 0.5 }}
+          viewport={{ once: true }}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

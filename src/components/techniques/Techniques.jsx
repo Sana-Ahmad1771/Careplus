@@ -1,15 +1,18 @@
 import manfacturing from "../../assets/Manufacturing-industry.png";
+import { motion } from "framer-motion";
 
 const Techniques = () => {
   return (
     <section className="py-30 px-5 lg:px-32 xl:px-40 bg-white overflow-hidden">
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
-
-        <div
+        
+        {/* Text Section */}
+        <motion.div
           className="max-w-[467px] space-y-5 lg:text-left"
-          data-aos="fade-right"
-          data-aos-delay="100"
-          data-aos-duration="1000"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.1 }}
+          viewport={{ once: true }}
         >
           <h1 className="text-4xl font-roboto lg:text-[44px] font-medium text-[#1E3D69]">
             Manufacturing Techniques
@@ -23,20 +26,22 @@ const Techniques = () => {
             and all those that are required for a World Class Medical
             Manufacturing Facility.
           </p>
-        </div>
+        </motion.div>
         
-        <div
+        {/* Image Section */}
+        <motion.div
           className="w-full lg:w-[50%] flex justify-center"
-          data-aos="fade-left"
-          data-aos-delay="300"
-          data-aos-duration="1000"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <img
             src={manfacturing}
             alt="Manufacturing"
             className="object-cover max-w-full h-auto"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

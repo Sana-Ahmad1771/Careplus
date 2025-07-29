@@ -4,6 +4,7 @@ import client3 from "../../assets/client-3.png";
 import client4 from "../../assets/client-4.png";
 import client5 from "../../assets/client-5.png";
 import client6 from "../../assets/client-6.png";
+import { motion } from "framer-motion";
 
 const ourclients = [
   { Image: client1, name: "Client 1" },
@@ -14,32 +15,55 @@ const ourclients = [
   { Image: client6, name: "Client 6" },
 ];
 
+// Variants for card animation
+const cardVariants = {
+  hidden: { opacity: 0, y: 40, scale: 0.9 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+};
+
 const ClientsSection = () => {
   return (
     <div className="py-30 px-5 lg:px-32 xl:px-40 overflow-hidden">
-      <h1
+      {/* Heading */}
+      <motion.h1
         className="text-4xl font-roboto lg:text-[44px] font-medium text-[#1E3D69] text-center mb-9"
-        data-aos="fade-up"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
       >
         Our Clients
-      </h1>
+      </motion.h1>
 
+      {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-4 gap-2">
         {ourclients.map((client, index) => (
-          <div
+          <motion.div
             key={index}
             className="w-full h-[160px] bg-white flex items-center justify-center
-             shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-105 px-2"
-            data-aos="zoom-in"
-            data-aos-delay={`${index * 100}`}
-            data-aos-duration="800"
+             shadow-md rounded-lg hover:shadow-lg px-2"
+            custom={index}
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.05 }}
           >
             <img
               src={client.Image}
               alt={client.name}
               className="max-h-[160px] object-contain"
             />
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

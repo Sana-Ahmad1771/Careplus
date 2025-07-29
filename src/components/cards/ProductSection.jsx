@@ -2,6 +2,7 @@ import product1 from "../../assets/product-1.png";
 import product2 from "../../assets/product-2.png";
 import product3 from "../../assets/product-3.png";
 import product4 from "../../assets/product-4.png";
+import { motion } from "framer-motion";
 
 const products = [
   { title: "Surgical Packs", image: product1 },
@@ -10,15 +11,30 @@ const products = [
   { title: "CSSD Wrappers", image: product4 },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 50, scale: 0.9 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  }),
+};
+
 const Productsection = () => {
   return (
     <div className="py-30 px-5 lg:px-32 xl:px-40 leading-normal">
       {/* Heading Section */}
-      <div
+      <motion.div
         className="text-center"
-        data-aos="fade-up"
-        data-aos-delay="100"
-        data-aos-duration="800"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1, duration: 0.8 }}
+        viewport={{ once: true }}
       >
         <h1 className="text-4xl font-roboto lg:text-[44px] font-medium text-[#1E3D69]">
           Our Product Category
@@ -28,19 +44,25 @@ const Productsection = () => {
           ranging from: Turnkey solutions, Surgical, Clinical, Life Sciences,
           Laboratory Medicine etc.
         </p>
-      </div>
+      </motion.div>
 
       {/* Product Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12 overflow-hidden">
         {products.map((item, index) => (
-          <div
+          <motion.div
             key={index}
             className="flex justify-center"
-            data-aos="zoom-in-up"
-            data-aos-delay={`${index * 200}`}
-            data-aos-duration="800"
+            custom={index}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
+            viewport={{ once: true }}
           >
-            <div className="w-[308px] relative shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-105 duration-300">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="w-[308px] relative shadow-md rounded-lg"
+            >
               <img
                 src={item.image}
                 alt={item.title}
@@ -49,8 +71,8 @@ const Productsection = () => {
               <div className="absolute bottom-0 left-0 w-full font-poppins bg-[#A9D6EBE5] text-[#1E3D69] text-[18px] font-medium text-center py-2 hover:bg-[#7eb9d4e5] transition duration-300">
                 {item.title}
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         ))}
       </div>
     </div>

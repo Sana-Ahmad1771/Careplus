@@ -1,5 +1,6 @@
 import NurseImg2 from "../../assets/Nurse-2.png";
 import Nursebg from "../../assets/Nurse-bg.png";
+import { motion } from "framer-motion";
 
 const Mission = () => {
   return (
@@ -10,45 +11,50 @@ const Mission = () => {
       >
         <div className="flex flex-col lg:flex-row items-center min-h-[623px] pt-3">
           {/* Text Section */}
-          <div
+          <motion.div
             className="max-w-[650px] mt-20 lg:mx-24 p-5 xl:p-10 border-l-[5.399px] font-normal leading-normal border-[#1E3D69] bg-white/70 backdrop-blur-[7.56px] relative mb-6 lg:mb-0"
-            data-aos="fade-right"
-            data-aos-delay="200"
-            data-aos-duration="1000"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
           >
-            <span
+            <motion.span
               className="bg-[#A9D6EB] py-3 px-6 font-roboto absolute -top-12 left-0 lg:-left-10 text-3xl text-[#1E3D69]"
-              data-aos="zoom-in"
-              data-aos-delay="400"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
             >
               Our Mission
-            </span>
-            <p
+            </motion.span>
+            <motion.p
               className="font-poppins text-[21px]"
-              data-aos="fade-up"
-              data-aos-delay="600"
-              data-aos-duration="800"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
             >
               <span className="font-medium">Advancing Life</span> – That’s what
               we at Safecare aim to do. With our products & our focus every day,
               it’s our goal to push boundaries for the benefit of those who rely
               on our care the most.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
           {/* Image */}
-          <div
+          <motion.div
             className="w-full max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
-            data-aos="fade-left"
-            data-aos-delay="400"
-            data-aos-duration="1000"
+           initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
           >
-            <img
+            <motion.img
               src={NurseImg2}
               alt="Nurse"
               className="max-w-full max-h-auto object-cover"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
