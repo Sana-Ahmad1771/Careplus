@@ -27,7 +27,7 @@ const cardVariants = {
 
 const Productsection = () => {
   return (
-    <div className="py-30 px-5 lg:px-32 xl:px-40 leading-normal">
+    <div className="pt-30 pb-20 px-5 lg:px-32 xl:px-40 leading-normal">
       {/* Heading Section */}
       <motion.div
         className="text-center"

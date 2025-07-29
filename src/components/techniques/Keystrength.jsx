@@ -42,7 +42,7 @@ const cardVariants = {
 export default function OurKeyStrengths() {
   return (
     <section
-      className="bg-no-repeat bg-cover bg-left-top w-full px-4 sm:px-8 md:px-16 lg:px-18 xl:px-40 pt-30 pb-40 overflow-hidden"
+      className="bg-no-repeat bg-cover bg-left-top w-full px-4 sm:px-8 md:px-16 lg:px-18 xl:px-40 pt-20 pb-40 overflow-hidden"
       style={{ backgroundImage: `url(${Backgroundmolecule})` }}
     >
       <div className="text-center">
