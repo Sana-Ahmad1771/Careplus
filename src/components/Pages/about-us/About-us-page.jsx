@@ -8,7 +8,7 @@ export const AboutUsPage = () => {
       <Header />
       {/* Top Banner */}
       <div
-        className="bg-cover bg-no-repeat min-h-[50vh] pt-12 2xl:pt-24 text-center space-y-2 font-roboto text-[#121212] relative"
+        className="bg-cover bg-no-repeat min-h-[60vh] 2xl:min-h-[65vh] lg:min-h-[100vh] flex flex-col justify-center items-center 2xl:items-center 2xl:justify-start 2xl:pt-44  space-y-2 font-roboto text-[#121212] relative px-5"
         style={{ backgroundImage: `url(${aboutbg})` }}
       >
         <h1 className="lg:text-[42px] text-4xl font-medium">About Us</h1>
@@ -20,10 +20,12 @@ export const AboutUsPage = () => {
       </div>
 
       {/* Who We Are Section */}
-      <section className="px-5 lg:px-36 xl:px-48">
-        <div className="bg-white font-normal relative w-fit -mt-16 2xl:-mt-36 z-30 px-8 pt-4 pb-40">
-          <h1 className="font-roboto lg:text-[42px] text-3xl mb-[36px]">Who We Are?</h1>
-          <div className="text-[16px] font-poppins space-y-6">
+      <section className="px-5 lg:px-36 xl:px-50">
+        <div className="bg-white font-normal relative w-fit lg:-mt-[100px] 2xl:-mt-[100px] z-30 lg:px-8 pt-4 lg:pt-12 lg:pb-40 my-12">
+          <h1 className="font-roboto text-center lg:text-left lg:text-[42px] text-4xl mb-[36px]">
+            Who We Are?
+          </h1>
+          <div className="text-[16px] lg:text-[20px] font-poppins space-y-6">
             <p>
               Safecare Medical Industries was conceived and established in the
               year of 2016 by Bin Ali group that plans to give a different
@@ -53,9 +55,9 @@ export const AboutUsPage = () => {
 
       {/* Mission & Vision */}
       <section className="pb-30 px-5 lg:px-32 xl:px-40">
-        <div className="flex flex-col md:flex-row h-auto md:h-[402px] font-roboto font-normal flex-wrap">
+        <div className="flex flex-col md:flex-row h-auto md:h-[502px] font-roboto font-normal flex-wrap">
           {/* Mission */}
-          <div className="bg-[#1E3D69] text-white flex justify-center flex-col p-10 w-full md:w-1/2">
+          <div className="bg-[#1E3D69] text-white flex justify-center flex-col lg:p-10 px-5 py-10 w-full md:w-1/2">
             <h1 className="text-[44px] mb-2">Our Mission</h1>
             <p className="font-poppins">
               Our mission is to become an admired, customer-friendly, and
@@ -65,7 +67,7 @@ export const AboutUsPage = () => {
 
           {/* Vision */}
           <div
-            className="bg-no-repeat bg-cover flex justify-center flex-col p-10 w-full md:w-1/2"
+            className="bg-no-repeat bg-cover flex justify-center flex-col lg:p-10 px-5 py-10 w-full md:w-1/2"
             style={{ backgroundImage: `url(${vissionbg})` }}
           >
             <h1 className="text-[44px] mb-2">Our Vision</h1>

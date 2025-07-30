@@ -69,7 +69,7 @@ const Header = () => {
       {/* Navbar */}
       <div className="flex justify-between items-center px-5 !lg:pr-[478px] xl:mx-40 bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] h-20">
         <div className="flex-shrink-0">
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="safecare-logo" />
         </div>
 
         {/* Desktop Nav */}
@@ -107,7 +107,7 @@ const Header = () => {
                   </button>
                 </div>
                 <hr className="mb-6 text-[#1E3D69]" />
-                <div className="flex flex-col text-[20px] space-y-6 px-2">
+                <div className="flex flex-col text-[20px] space-y-6 px-2 list-none">
                   <li><Link to="/" className="hover:text-[#1E3D69]">Home</Link></li>
                   <li><Link to="/about" className="hover:text-[#1E3D69]">About Us</Link></li>
                   <a href="#products" onClick={closeMenu}>Products</a>
