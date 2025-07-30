@@ -28,7 +28,7 @@ const Hero = () => {
           </motion.span>
           <div className="max-w-[588px]">
             <motion.h1
-              className="text-4xl lg:text-[42px] font-roboto mb-6"
+              className="text-4xl lg:text-[44px] font-roboto mb-6"
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}

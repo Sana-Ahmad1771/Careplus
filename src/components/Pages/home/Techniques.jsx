@@ -17,7 +17,7 @@ const Techniques = () => {
           <h1 className="text-4xl font-roboto lg:text-[44px] font-medium text-[#1E3D69]">
             Manufacturing Techniques
           </h1>
-          <p className="text-[18px] lg:text-[20px] font-poppins font-normal leading-normal">
+          <p className="text-[18px] lg:text-justify lg:text-[20px] font-poppins font-normal leading-normal">
             Our manufacturing includes a wide variety of processes including
             <span className="font-medium">
               {" "}

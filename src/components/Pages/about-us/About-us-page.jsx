@@ -1,6 +1,8 @@
 import aboutbg from "../../../assets/unsplash_12Tdn6oLvSU.png";
 import vissionbg from "../../../assets/bg-about-vission.png";
 import Header from "../../common/Header";
+import cleanroomimage from "../../../assets/Clean-room-img.png";
+import cleanroomrectangle from "../../../assets/Cleanroom-bg-rectangle.png";
 
 export const AboutUsPage = () => {
   return (
@@ -8,10 +10,10 @@ export const AboutUsPage = () => {
       <Header />
       {/* Top Banner */}
       <div
-        className="bg-cover bg-no-repeat min-h-[60vh] 2xl:min-h-[65vh] lg:min-h-[100vh] flex flex-col justify-center items-center 2xl:items-center 2xl:justify-start 2xl:pt-44  space-y-2 font-roboto text-[#121212] relative px-5"
+        className="bg-cover bg-no-repeat min-h-[60vh] 2xl:min-h-[65vh] lg:min-h-[100vh] flex flex-col justify-center items-center 2xl:items-center 2xl:justify-start 2xl:pt-44 font-roboto text-[#121212] relative px-5"
         style={{ backgroundImage: `url(${aboutbg})` }}
       >
-        <h1 className="lg:text-[42px] text-4xl font-medium">About Us</h1>
+        <h1 className="lg:text-[44px] text-4xl font-medium mb-5">About Us</h1>
         <div className="space-x-2 lg:text-2xl text-[16px] font-normal">
           <a href="#home">Home /</a>
           <a href="#aboutUs">About Us /</a>
@@ -25,7 +27,7 @@ export const AboutUsPage = () => {
           <h1 className="font-roboto text-center lg:text-left lg:text-[42px] text-4xl mb-[36px]">
             Who We Are?
           </h1>
-          <div className="text-[16px] lg:text-[20px] font-poppins space-y-6">
+          <div className="text-[16px] lg:text-[20px] text-justify font-poppins space-y-6">
             <p>
               Safecare Medical Industries was conceived and established in the
               year of 2016 by Bin Ali group that plans to give a different
@@ -78,6 +80,45 @@ export const AboutUsPage = () => {
           </div>
         </div>
       </section>
+      {/* our key strenght */}
+      {/* Our Key Strengths */}
+<section className="py-20 px-5 lg:px-32 xl:px-40 bg-white">
+  <div className="text-center font-normal mb-16">
+    <h1 className="lg:text-[44px] text-4xl mb-5 text-[#1E3D69] font-roboto">
+      Our Key Strengths
+    </h1>
+    <p className="text-[16px] lg:text-[20px] font-poppins max-w-2xl mx-auto">
+      Who are in extremely love with eco-friendly system.
+    </p>
+  </div>
+
+  <div className="flex flex-col lg:flex-row items-center gap-10">
+    {/* Image Section */}
+    {/* <div
+      className="bg-no-repeat  flex justify-center items-center "
+      style={{ backgroundImage: `url(${cleanroomrectangle})` }}
+    >
+      <img
+        src={cleanroomimage}
+        alt="cleanroomimage"
+        className="max-h-[529px] max-w-[528px] object-contain"
+      />
+    </div> */}
+
+    {/* Text Content */}
+    <div className="font-poppins text-[16px] lg:text-[20px] space-y-4 text-justify max-w-xl">
+      {/* <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E3D69] font-roboto">
+        Clean Rooms
+      </h2>
+      <p>
+        Spread over a total area of 1500 sq meters. Safecare manufacturing takes place
+        in the ISO 7 and ISO 8 classified clean room environment that has a low level of
+        pollutants such as dust, airborne microbes, aerosol particles, and chemical vapors.
+      </p> */}
+    </div>
+  </div>
+</section>
+
     </>
   );
 };
