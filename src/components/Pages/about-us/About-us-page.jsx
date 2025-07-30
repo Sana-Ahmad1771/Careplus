@@ -55,10 +55,10 @@ export const AboutUsPage = () => {
 
       {/* Mission & Vision */}
       <section className="pb-30 px-5 lg:px-32 xl:px-40">
-        <div className="flex flex-col md:flex-row h-auto md:h-[502px] font-roboto font-normal flex-wrap">
+        <div className="flex flex-col md:flex-row h-auto md:h-[502px] flex-wrap">
           {/* Mission */}
-          <div className="bg-[#1E3D69] text-white flex justify-center flex-col lg:p-10 px-5 py-10 w-full md:w-1/2">
-            <h1 className="text-[44px] mb-2">Our Mission</h1>
+          <div className="bg-[#1E3D69] text-white flex justify-center flex-col font-normal lg:p-10 px-5 py-10 w-full md:w-1/2">
+            <h1 className="text-[44px] mb-2 font-roboto">Our Mission</h1>
             <p className="font-poppins">
               Our mission is to become an admired, customer-friendly, and
               innovative medical solutions provider.
@@ -67,10 +67,10 @@ export const AboutUsPage = () => {
 
           {/* Vision */}
           <div
-            className="bg-no-repeat bg-cover flex justify-center flex-col lg:p-10 px-5 py-10 w-full md:w-1/2"
+            className="bg-no-repeat bg-cover  flex justify-center flex-col lg:p-10 px-5 py-10 w-full md:w-1/2 font-normal flex-wrap"
             style={{ backgroundImage: `url(${vissionbg})` }}
           >
-            <h1 className="text-[44px] mb-2">Our Vision</h1>
+            <h1 className="text-[44px] mb-2 font-roboto">Our Vision</h1>
             <p className="font-poppins">
               Safecare Medical Industries exists to improve human life quality
               through affordable and reliable innovations.
