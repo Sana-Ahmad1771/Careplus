@@ -108,8 +108,8 @@ const Header = () => {
                 </div>
                 <hr className="mb-6 text-[#1E3D69]" />
                 <div className="flex flex-col text-[20px] space-y-6 px-2">
-                  <a href="#home" onClick={closeMenu}>Home</a>
-                  <a href="#about" onClick={closeMenu}>About</a>
+                  <li><Link to="/" className="hover:text-[#1E3D69]">Home</Link></li>
+                  <li><Link to="/about" className="hover:text-[#1E3D69]">About Us</Link></li>
                   <a href="#products" onClick={closeMenu}>Products</a>
                   <a href="#gallery" onClick={closeMenu}>Gallery</a>
                   <a href="#career" onClick={closeMenu}>Careers</a>
