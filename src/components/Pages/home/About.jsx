@@ -1,4 +1,4 @@
-import NurseImg1 from "../../assets/Nurse-1.png";
+import NurseImg1 from "../../../assets/Nurse-1.png";
 import { motion } from "framer-motion";
 const About = () => {
   return (

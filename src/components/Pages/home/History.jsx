@@ -1,4 +1,4 @@
-import history1 from "../../assets/History-1-img.png";
+import history1 from "../../../assets/History-1-img.png";
 import { motion } from "framer-motion";
 const History = () => {
   return (

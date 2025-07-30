@@ -1,5 +1,5 @@
 import { LayoutGrid, Cpu, Pill } from "lucide-react";
-import Backgroundmolecule from "../../assets/Molecular-bg.png";
+import Backgroundmolecule from "../../../assets/Molecular-bg.png";
 import { motion } from "framer-motion";
 
 const strengths = [

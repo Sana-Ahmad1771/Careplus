@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import news1 from "../../assets/news-1.png";
-import news2 from "../../assets/news-2.png";
-import news3 from "../../assets/news-3.png";
+import news1 from "../../../assets/news-1.png";
+import news2 from "../../../assets/news-2.png";
+import news3 from "../../../assets/news-3.png";
 import { MoveRight } from "lucide-react";
 
 const NewsAndEvents = () => {

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import cert1 from "../../assets/cert-1.png";
-import cert2 from "../../assets/cert-2.png";
-import cert3 from "../../assets/cert-3.png";
+import cert1 from "../../../assets/cert-1.png";
+import cert2 from "../../../assets/cert-2.png";
+import cert3 from "../../../assets/cert-3.png";
 
 const QualityCertification = () => {
   return (

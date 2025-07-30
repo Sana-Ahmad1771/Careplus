@@ -1,4 +1,4 @@
-import manfacturing from "../../assets/Manufacturing-industry.png";
+import manfacturing from "../../../assets/Manufacturing-industry.png";
 import { motion } from "framer-motion";
 
 const Techniques = () => {

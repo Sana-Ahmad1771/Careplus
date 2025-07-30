@@ -9,6 +9,7 @@ import { LuInstagram } from "react-icons/lu";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
 import { AlignRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -74,8 +75,8 @@ const Header = () => {
         {/* Desktop Nav */}
         <div className="hidden lg:block">
           <ul className="flex justify-center items-center space-x-10 list-none">
-            <li><a href="#home" className="hover:text-[#1E3D69]">Home</a></li>
-            <li><a href="#about" className="hover:text-[#1E3D69]">About Us</a></li>
+            <li><Link to="/" className="hover:text-[#1E3D69]">Home</Link></li>
+            <li><Link to="/about" className="hover:text-[#1E3D69]">About Us</Link></li>
             <li><a href="#products" className="hover:text-[#1E3D69]">Products</a></li>
             <li><a href="#gallery" className="hover:text-[#1E3D69]">Gallery</a></li>
             <li><a href="#career" className="hover:text-[#1E3D69]">Careers</a></li>

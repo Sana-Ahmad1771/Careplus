@@ -1,5 +1,5 @@
-import NurseImg2 from "../../assets/Nurse-2.png";
-import Nursebg from "../../assets/Nurse-bg.png";
+import NurseImg2 from "../../../assets/Nurse-2.png";
+import Nursebg from "../../../assets/Nurse-bg.png";
 import { motion } from "framer-motion";
 
 const Mission = () => {

@@ -1,7 +1,7 @@
-import product1 from "../../assets/product-1.png";
-import product2 from "../../assets/product-2.png";
-import product3 from "../../assets/product-3.png";
-import product4 from "../../assets/product-4.png";
+import product1 from "../../../../assets/product-1.png";
+import product2 from "../../../../assets/product-2.png";
+import product3 from "../../../../assets/product-3.png";
+import product4 from "../../../../assets/product-4.png";
 import { motion } from "framer-motion";
 
 const products = [
