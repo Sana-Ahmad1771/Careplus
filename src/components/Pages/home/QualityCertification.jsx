@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import cert1 from "../../../assets/cert-1.png";
 import cert2 from "../../../assets/cert-2.png";
 import cert3 from "../../../assets/cert-3.png";
-
+import qualitybg from "../../../assets/qualitycertification-bg.png"
 const QualityCertification = () => {
   return (
     <motion.div
-      className="bg-white py-30 px-5 lg:px-32 xl:px-40 text-center mt-10 overflow-hidden leading-normal font-normal"
+      className="bg-white bg-no-repeat bg-cover bg-center py-30 px-5 lg:px-32 xl:px-40 text-center mt-10 overflow-hidden leading-normal font-normal"
+      style={{ backgroundImage: `url(${qualitybg})` }}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
