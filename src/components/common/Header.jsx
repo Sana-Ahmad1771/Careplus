@@ -110,10 +110,12 @@ const Header = () => {
                 <div className="flex flex-col text-[20px] space-y-6 px-2 list-none">
                   <li><Link to="/" className="hover:text-[#1E3D69]">Home</Link></li>
                   <li><Link to="/about" className="hover:text-[#1E3D69]">About Us</Link></li>
-                  <a href="#products" onClick={closeMenu}>Products</a>
-                  <a href="#gallery" onClick={closeMenu}>Gallery</a>
-                  <a href="#career" onClick={closeMenu}>Careers</a>
-                  <a href="#contact" onClick={closeMenu}>Contact</a>
+                  <li><Link to="/" className="hover:text-[#1E3D69]">Home</Link></li>
+                  <li><Link to="/about" className="hover:text-[#1E3D69]">About Us</Link></li>
+                  <li><Link to="/products" className="hover:text-[#1E3D69]">Products</Link></li>
+                  <li><Link to="/gallery" className="hover:text-[#1E3D69]">Gallery</Link></li>
+                  <li><a href="#career" className="hover:text-[#1E3D69]">Careers</a></li>
+                  <li><Link to="/contact" className="hover:text-[#1E3D69]">Contact</Link></li>
                 </div>
               </motion.div>
             )}
