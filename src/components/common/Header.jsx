@@ -77,10 +77,10 @@ const Header = () => {
           <ul className="flex justify-center items-center space-x-10 list-none">
             <li><Link to="/" className="hover:text-[#1E3D69]">Home</Link></li>
             <li><Link to="/about" className="hover:text-[#1E3D69]">About Us</Link></li>
-            <li><a href="#products" className="hover:text-[#1E3D69]">Products</a></li>
-            <li><a href="#gallery" className="hover:text-[#1E3D69]">Gallery</a></li>
+            <li><Link to="/products" className="hover:text-[#1E3D69]">Products</Link></li>
+            <li><Link to="/gallery" className="hover:text-[#1E3D69]">Gallery</Link></li>
             <li><a href="#career" className="hover:text-[#1E3D69]">Careers</a></li>
-            <li><a href="#contact" className="hover:text-[#1E3D69]">Contact</a></li>
+            <li><Link to="/contact" className="hover:text-[#1E3D69]">Contact</Link></li>
           </ul>
         </div>
 

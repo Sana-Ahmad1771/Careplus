@@ -1,5 +1,6 @@
 import cleanroomimage from "../../../assets/Clean-room-img.png";
 import { motion } from "motion/react";
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },

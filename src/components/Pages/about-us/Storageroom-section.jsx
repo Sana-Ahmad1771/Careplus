@@ -1,5 +1,4 @@
 import storageroomimage from "../../../assets/storage-image.png";
-import storageroomrectangle from "../../../assets/storage-rectangle.png";
 import { motion } from "motion/react";
 
 export const StorageRoom = () => {

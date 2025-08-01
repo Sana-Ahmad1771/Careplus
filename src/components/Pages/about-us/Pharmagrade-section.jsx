@@ -1,6 +1,6 @@
 import pharmagradeimage from "../../../assets/pharmagradeimage.png";
-
 import { motion } from "motion/react";
+
 export const OurKeyStrength = () => {
   return (
     <>

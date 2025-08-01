@@ -1,7 +1,7 @@
 import aboutbg from "../../../assets/unsplash_12Tdn6oLvSU.png";
 import vissionbg from "../../../assets/bg-about-vission.png";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export const AboutUsPage = () => {
   return (
     <>
@@ -30,7 +30,7 @@ export const AboutUsPage = () => {
           viewport={{ once: true }}
           className="space-x-2 lg:text-2xl text-[16px] font-normal"
         >
-          <a href="#home">Home /</a>
+          <Link to="/">Home /</Link>
           <a href="#aboutUs">About Us /</a>
           <a href="#overView">Overview</a>
         </motion.div>

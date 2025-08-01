@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import Home from "./home/page.jsx"
 import About from "./about/page.jsx";
+import Gallery from "./gallery/page.jsx"
+import Contact from "./contact/page.jsx";
 
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}  />
         <Route path="/about" element={<About/>}  />
+        <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Router>
   );
