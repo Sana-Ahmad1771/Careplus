@@ -2,7 +2,7 @@ import { motion} from "motion/react";
 import joiningbg from "../../../assets/Joining-bg.png"
 const JoiningSafeCare = () => {
   return (
-    <div className="py-10 px-5 lg:px-32 xl:px-40 font-roboto bg-no-repeat bg-center bg-cover text-center flex flex-col lg:flex-row items-center justify-between overflow-hidden font-normal"
+    <div className="py-10 px-5 lg:px-32 xl:px-40 font-roboto bg-no-repeat lg:bg-center sm:bg-left bg-left bg-cover text-center flex flex-col lg:flex-row items-center justify-between overflow-hidden font-normal"
       style={{ backgroundImage: `url(${joiningbg})` }}
     >
       <p className="text-2xl leading-normal text-[#fff]">
