@@ -1,11 +1,11 @@
 import pharmagradeimage from "../../../assets/pharmagradeimage.png";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export const OurKeyStrength = () => {
   return (
     <>
       {/* 3 section*/}
-            <section className="pb-20 px-5 lg:px-32 xl:px-40">
+            <section className="pb-20 px-5 lg:px-32 xl:px-40 overflow-hidden">
               <motion.div
                 className="flex flex-col lg:flex-row items-center justify-center gap-[30px] 2xl:gap-32 h-auto lg:h-[586px]"
                 initial={{ opacity: 0, y: 50 }}
@@ -32,7 +32,7 @@ export const OurKeyStrength = () => {
                   />
                 </motion.div>
                 {/* Text Section */}
-                <div
+                <motion.div
                   className="font-poppins text-[#323232] text-[16px] lg:text-[20px] space-y-4 text-justify font-normal max-w-xl flex-1 z-10"
                   initial={{ x: 50, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
@@ -49,7 +49,7 @@ export const OurKeyStrength = () => {
                     environment that has a low level of pollutants such as dust,
                     airborne microbes, aerosol particles, and chemical vapors.
                   </p>
-                </div>
+                </motion.div>
               </motion.div>
             </section>
     </>

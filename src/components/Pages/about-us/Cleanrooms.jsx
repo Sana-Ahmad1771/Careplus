@@ -1,5 +1,5 @@
 import cleanroomimage from "../../../assets/Clean-room-img.png";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -9,7 +9,7 @@ const fadeInUp = {
 const CleanRoom = () => {
   return (
     <>
-      <section className="lg:pt-20 px-5 lg:px-32 xl:px-40 bg-white">
+      <section className="lg:pt-20 px-5 lg:px-32 xl:px-40 bg-white overflow-hidden">
         <motion.div
           className="text-center font-normal mb-20"
           initial="hidden"
@@ -53,7 +53,7 @@ const CleanRoom = () => {
             />
           </motion.div>
           {/* Text Section */}
-          <div
+          <motion.div
             className="font-poppins text-[#323232] text-[16px] lg:text-[20px] space-y-4 text-justify font-normal max-w-xl flex-1 z-10"
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -70,7 +70,7 @@ const CleanRoom = () => {
               environment that has a low level of pollutants such as dust,
               airborne microbes, aerosol particles, and chemical vapors.
             </p>
-          </div>
+          </motion.div>
         </motion.div>
       </section>
     </>

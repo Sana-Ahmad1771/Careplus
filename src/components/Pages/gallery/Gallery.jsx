@@ -12,7 +12,7 @@ const Gallery = () => {
   return (
     <>
       {/* Banner */}
-      <section className="relative z-0 h-[510px] py-20 px-5 lg:px-32 xl:px-40 bg-[#F5F5F5] flex justify-center items-center">
+      <section className="relative z-0 h-[510px] py-20 px-5 lg:px-32 xl:px-40 bg-[#F5F5F5] flex justify-center items-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}

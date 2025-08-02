@@ -4,7 +4,7 @@ import { section } from "motion/react-client";
 const Locationmap = () => {
   return (
     <>
-    <section className="px-5 lg:px-32 xl:px-40 pt-10 pb-20 ">
+    <section className="px-5 lg:px-32 xl:px-40 pt-10 pb-20 overflow-hidden">
     <div className=" w-full h-[565px] mt-10">
       <iframe
         title="Our Location"

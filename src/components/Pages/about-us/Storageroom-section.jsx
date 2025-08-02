@@ -1,11 +1,11 @@
 import storageroomimage from "../../../assets/storage-image.png";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export const StorageRoom = () => {
   return (
     <>
       {/* 2 section */}
-      <section className="pb-20 px-5 lg:px-32 xl:px-40 bg-white">
+      <section className="pb-20 px-5 lg:px-32 xl:px-40 bg-white overflow-hidden">
         <motion.div
           className="flex flex-col-reverse lg:flex-row items-center justify-center lg:items-center h-auto lg:h-[529px] gap-[30px] 2xl:gap-32"
           initial={{ opacity: 0, y: 50 }}

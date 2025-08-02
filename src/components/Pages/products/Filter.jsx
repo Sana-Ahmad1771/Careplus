@@ -72,7 +72,7 @@ const Filters = () => {
       : `"${selectedCategories.join(", ")}"`;
 
   return (
-    <section className="py-20 px-5 lg:px-32 xl:px-40 font-poppins">
+    <section className="py-20 px-5 lg:px-32 xl:px-40 font-poppins overflow-hidden">
       <div className="flex flex-col lg:flex-row gap-10">
         {/* Filters Sidebar */}
         <aside className="lg:w-1/4 w-full">
@@ -108,25 +108,34 @@ const Filters = () => {
           </div>
           <hr className="mb-3 " />
           <div className="space-y-2">
-            <label className="block">
+            <div className="flex items-center gap-2">
               <input
                 type="checkbox"
-                className="mr-2 accent-black"
+                id="all-categories"
+                name="category"
+                className="accent-black"
                 checked={selectedCategories.length === 0}
                 onChange={clearAll}
               />
-              All
-            </label>
+              <label htmlFor="all-categories" className="text-sm">
+                All
+              </label>
+            </div>
+
             {categories.map((cat) => (
-              <label key={cat} className="block">
+              <div key={cat} className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  className="mr-2 accent-black"
+                  id={cat}
+                  name="category"
+                  className="accent-black"
                   checked={selectedCategories.includes(cat)}
                   onChange={() => toggleCategory(cat)}
                 />
-                {cat}
-              </label>
+                <label htmlFor={cat} className="text-sm">
+                  {cat}
+                </label>
+              </div>
             ))}
           </div>
         </aside>

@@ -13,7 +13,7 @@ const Contactus = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="relative z-0 h-[510px] py-20 px-5 lg:px-32 xl:px-40 flex justify-center items-center bg-cover bg-center"
+        className="relative z-0 h-[510px] py-20 px-5 lg:px-32 xl:px-40 flex justify-center items-center bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: `url(${contactusbg})` }}
       >
         <div className="text-center">
@@ -63,17 +63,24 @@ const Contactus = () => {
             </p>
             <form className="space-y-4 grid md:grid-cols-2 grid-cols-1  gap-4">
               <input
+                name="name"
                 type="text"
                 placeholder="Your Name"
                 className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <input
                 type="email"
+                id="email"
+                name="email"
                 placeholder="Your Email"
                 className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 "
               />
 
-              <select className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white">
+              <select
+                id="interest"
+                name="interest"
+                className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
+              >
                 <option value="" disabled>
                   Interested In
                 </option>
@@ -86,10 +93,14 @@ const Contactus = () => {
 
               <input
                 type="number"
+                id="contactno"
+                name="contactno"
                 placeholder="Phone No."
                 className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <textarea
+                id="message"
+                name="message"
                 placeholder="Your Message"
                 rows="4"
                 className="md:col-span-2 border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"

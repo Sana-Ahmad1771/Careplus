@@ -2,6 +2,7 @@ import aboutbg from "../../../assets/unsplash_12Tdn6oLvSU.png";
 import vissionbg from "../../../assets/bg-about-vission.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
 export const AboutUsPage = () => {
   return (
     <>
@@ -11,7 +12,7 @@ export const AboutUsPage = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-cover bg-no-repeat bg-center min-h-[60vh] 2xl:min-h-[65vh] lg:min-h-[100vh] flex flex-col justify-center items-center 2xl:items-center 2xl:justify-start 2xl:pt-44 font-roboto text-[#121212] relative px-5"
+        className="bg-cover bg-no-repeat bg-center min-h-[60vh] 2xl:min-h-[65vh] lg:min-h-[100vh] flex flex-col justify-center items-center 2xl:items-center 2xl:justify-start 2xl:pt-44 font-roboto text-[#121212] relative px-5 overflow-hidden"
         style={{ backgroundImage: `url(${aboutbg})` }}
       >
         <motion.h1
