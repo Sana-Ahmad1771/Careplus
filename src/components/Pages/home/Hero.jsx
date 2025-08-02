@@ -1,4 +1,4 @@
-import BackgroundImage from "../../../assets/Rectangle3173.jpg";
+import BackgroundImage from "../../../assets/Rectangle3173.png";
 import { motion } from "motion/react";
 
 const Hero = () => {

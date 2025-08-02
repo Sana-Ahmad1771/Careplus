@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 const Gallery = () => {
@@ -24,7 +24,7 @@ const Gallery = () => {
             className="lg:text-[44px] text-4xl font-medium mb-5"
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
             viewport={{ once: true }}
           >
             Gallery
@@ -33,7 +33,7 @@ const Gallery = () => {
             className="space-x-2 cursor-pointer text-2xl font-roboto font-normal"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
             <Link to="/">Home /</Link>
