@@ -33,7 +33,7 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          className="flex-1 min-w-[190px] max-w-[20%]"
+          className="flex-1 min-w-[190px] lg:max-w-[20%]"
         >
           <img src={logo} alt="Logo" className="mb-5 w-32" />
           <p className="mb-6 text-[16px]">
@@ -131,7 +131,7 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="flex-1 min-w-[190px] max-w-[20%]"
+          className="flex-1 min-w-[190px] lg:max-w-[20%]"
         >
           <h4 className="text-2xl font-plus-jakarta-sans mb-4">Location</h4>
           <p className="mb-6 text-[16px]">
