@@ -25,9 +25,7 @@ const Contactus = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-
-    // TODO: you can send formData to an API or email service here
-
+    
     // Reset form fields
     setFormData({
       name: "",

@@ -33,12 +33,12 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          className="flex-1 min-w-[190px]"
+          className="flex-1 min-w-[190px] max-w-[20%]"
         >
           <img src={logo} alt="Logo" className="mb-5 w-32" />
-          <p className="mb-6">
-            Welcome to a place of refinement and beauty. This is Furniture, a WP
-            gem we made for all furniture stores & brands.
+          <p className="mb-6 text-[16px]">
+            We are many variations of the passages available but the majoro have
+            suffered alteration injected.
           </p>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
@@ -62,24 +62,40 @@ const Footer = () => {
           </div>
         </motion.div>
 
-        {/* Services */}
+        {/* Quick Links*/}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <h4 className="text-2xl font-plus-jakarta-sans mb-4">Services</h4>
-          <ul className="space-y-2">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
+          <h4 className="text-2xl font-plus-jakarta-sans mb-4">Quick Links</h4>
+          <ul className="space-y-4 text-[16px]">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
           </ul>
         </motion.div>
 
-        {/* Resources */}
+        {/* Browse Category */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -87,11 +103,25 @@ const Footer = () => {
           viewport={{ once: true }}
         >
           <h4 className="text-2xl font-plus-jakarta-sans mb-4">Resources</h4>
-          <ul className="space-y-2">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact Us</a></li>
+          <ul className="space-y-4 text-[16px]">
+            <li>
+              <a href="#">Medicine</a>
+            </li>
+            <li>
+              <a href="#">Medical Equipments</a>
+            </li>
+            <li>
+              <a href="#">Beauty &Mom Care</a>
+            </li>
+            <li>
+              <a href="#">Health Care</a>
+            </li>
+            <li>
+              <a href="#">Food & Nutrition</a>
+            </li>
+            <li>
+              <a href="#">Medical Supplies</a>
+            </li>
           </ul>
         </motion.div>
 
@@ -101,10 +131,10 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="flex-1 min-w-[190px]"
+          className="flex-1 min-w-[190px] max-w-[20%]"
         >
           <h4 className="text-2xl font-plus-jakarta-sans mb-4">Location</h4>
-          <p className="mb-6">
+          <p className="mb-6 text-[16px]">
             PPGH+X76 - Kizad - Khalifa Industrial Zone - Abu Dhabi
           </p>
           <div className="flex gap-3">
