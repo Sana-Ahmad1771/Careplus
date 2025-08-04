@@ -1,3 +1,4 @@
+import { useState } from "react";
 import contactusbg from "../../../assets/Contactus-bg.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -5,6 +6,38 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Contactus = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    interest: "",
+    contactno: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+
+    // TODO: you can send formData to an API or email service here
+
+    // Reset form fields
+    setFormData({
+      name: "",
+      email: "",
+      interest: "",
+      contactno: "",
+      message: "",
+    });
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -61,11 +94,16 @@ const Contactus = () => {
               Safecare Medical Industries was conceived and established in the
               year of 2016.
             </p>
-            <form className="space-y-4 grid md:grid-cols-2 grid-cols-1  gap-4">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-4 grid md:grid-cols-2 grid-cols-1 gap-4"
+            >
               <input
                 name="name"
                 type="text"
                 placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <input
@@ -73,12 +111,15 @@ const Contactus = () => {
                 id="email"
                 name="email"
                 placeholder="Your Email"
-                className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 "
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
-
               <select
                 id="interest"
                 name="interest"
+                value={formData.interest}
+                onChange={handleChange}
                 className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
               >
                 <option value="" disabled>
@@ -90,12 +131,13 @@ const Contactus = () => {
                 <option value="Careers">Careers</option>
                 <option value="Other">Other</option>
               </select>
-
               <input
                 type="number"
                 id="contactno"
                 name="contactno"
                 placeholder="Phone No."
+                value={formData.contactno}
+                onChange={handleChange}
                 className="w-full border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <textarea
@@ -103,6 +145,8 @@ const Contactus = () => {
                 name="message"
                 placeholder="Your Message"
                 rows="4"
+                value={formData.message}
+                onChange={handleChange}
                 className="md:col-span-2 border-b placeholder-[#1E1E1E] border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               ></textarea>
               <div className="md:col-span-2 flex justify-end">
@@ -126,7 +170,7 @@ const Contactus = () => {
           >
             <div>
               <h2 className="text-xl font-medium mb-2">Call Us</h2>
-              <p className=" mb-1">
+              <p className="mb-1">
                 Safecare Medical Industries was conceived and established in the
                 year of 2016.
               </p>
@@ -141,7 +185,7 @@ const Contactus = () => {
             </div>
             <div>
               <h2 className="text-xl font-medium mb-2">Visit Us</h2>
-              <p className=" mb-1">
+              <p className="mb-1">
                 Safecare Medical Industries was conceived and established in the
                 year of 2016.
               </p>

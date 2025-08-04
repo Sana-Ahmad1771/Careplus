@@ -79,7 +79,6 @@ const Header = () => {
             <li><Link to="/about" className="hover:text-[#1E3D69]">About Us</Link></li>
             <li><Link to="/products" className="hover:text-[#1E3D69]">Products</Link></li>
             <li><Link to="/gallery" className="hover:text-[#1E3D69]">Gallery</Link></li>
-            <li><a href="#career" className="hover:text-[#1E3D69]">Careers</a></li>
             <li><Link to="/contact" className="hover:text-[#1E3D69]">Contact</Link></li>
           </ul>
         </div>
@@ -112,7 +111,6 @@ const Header = () => {
                   <li><Link to="/about" className="hover:text-[#1E3D69]">About Us</Link></li>
                   <li><Link to="/products" className="hover:text-[#1E3D69]">Products</Link></li>
                   <li><Link to="/gallery" className="hover:text-[#1E3D69]">Gallery</Link></li>
-                  <li><a href="#career" className="hover:text-[#1E3D69]">Careers</a></li>
                   <li><Link to="/contact" className="hover:text-[#1E3D69]">Contact</Link></li>
                 </div>
               </motion.div>
