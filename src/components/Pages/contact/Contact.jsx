@@ -76,7 +76,7 @@ const Contactus = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true }}
-       className="relative z-0 h-[510px] py-20 px-5 lg:px-32 xl:px-40 flex justify-center items-center bg-cover bg-center overflow-hidden pt-20"
+        className="relative z-0 py-20 px-5 mt-10 lg:px-32 xl:px-40 flex justify-center items-center bg-cover bg-center overflow-hidden"
       >
         <div className="flex flex-col md:flex-row gap-10 bg-white rounded-lg shadow-md font-poppins">
           {/* Contact Form */}
